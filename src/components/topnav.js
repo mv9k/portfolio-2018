@@ -46,7 +46,7 @@ function TopNav(props) {
                     {/*<Typography variant="title" color="inherit" className='name'>*/}
                         {/*Kristopher Wheeler*/}
                     {/*</Typography>*/}
-                    <div className={classes.navLinks}>
+                    <div className={classes.navLinks + ' ' + 'main-nav'}>
                         <Button color="inherit">
                             <NavLink activeClassName='active-nav' to="/" exact={true}>
                                 <div className='link-line-a'></div>

@@ -18,7 +18,7 @@ const styles = theme => ({
         // margin: '10vh 20vw',
         minWidth: '50vw',
         maxWidth: '70vw',
-        padding: '.6em !important',
+        padding: '.3em !important',
     },
     customTilt: {
         padding: '6em',
@@ -40,6 +40,13 @@ function LandingPage(props) {
                     <div className='Tilt-inner'>
                         <Paper className={classes.root + ' ' + 'landing-paper-bg'} elevation={22}>
                             <div className='Tilt-inner landing-paper-content'>
+                                <Paper className='landing-tab' elevation={6}>
+                                    <div className='Tilt-inner'>
+                                        <Typography variant="headline" component="p" className='tab-text'>
+                                            <span className="glitch">email@gmail.com  |  555-555-5555</span>
+                                        </Typography>
+                                    </div>
+                                </Paper>
                                 <ScrollAnimation animateIn="fadeIn" delay={300}>
                                     <Paper className='portrait' elevation={22}>
                                         <div className='Tilt-inner'>
@@ -47,7 +54,7 @@ function LandingPage(props) {
                                         </div>
                                     </Paper>
                                 </ScrollAnimation>
-                                <Typography variant="headline" component="h2">
+                                <Typography variant="headline" component="h3">
                                     <span className='gold'> / About </span>
                                 </Typography>
                                 <Typography component="p">
