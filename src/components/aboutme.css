@@ -13,9 +13,24 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c858e', endColorstr='#131212',GradientType=1 ); /* ie6-9 */
 }
 
+.second-layer {
+    max-width: 44vw;
+    position: relative;
+    bottom: 36em;
+    left: 11em;
+    margin: 0 auto;
+    border-radius: 0 !important;
+    background: rgba(0,0,0,0.3) !important;
+}
+
+.second-layer * {
+    border-radius: 0 !important;
+    background: none !important;
+}
+
 @media only screen and (max-width: 600px) {
     .main-paper {
-        margin: 2em !important;
+        margin: 2em 1em !important;
         height: 70vh !important;
     }
 }

@@ -9,10 +9,21 @@ a {
 }
 
 .link-line {
-    top: 6px;
+    bottom: -6px;
+}
+
+.link-line-a {
+    float: right;
+    top: -6px;
+}
+
+.link-line-z {
+    height: 1px;
+    width: 100%;
 }
 
 .link-line, .link-line-a {
+    position: relative;
     opacity: 0;
     transition: all 1s;
     height: 1px;
@@ -21,15 +32,9 @@ a {
     /*background: radial-gradient(circle, rgba(241,230,209,1) 0%, rgba(241,230,209,1) 87%, rgba(0,212,255,0) 100%);    position: relative;*/
 }
 
-.link-line-a {
-    float: right;
-    top: -6px !important;
-}
-
 button:hover .link-line, button:hover .link-line-a {
     width: 100%;
     opacity: 1;
-    float: inside;
 }
 
 button:hover {
@@ -39,6 +44,11 @@ button:hover {
 .active-nav {
     /*color: #f1e6d1 !important;*/
     color: rgb(241,230,209) !important;
+}
+
+.active-nav .link-line, .active-nav .link-line-a {
+    opacity: 1;
+    width: 100%;
 }
 
 .name {

@@ -50,6 +50,7 @@ function TopNav(props) {
                         <Button color="inherit">
                             <NavLink activeClassName='active-nav' to="/">
                                 <div className='link-line-a'></div>
+                                <div className='link-line-z'></div>
                                 <span>Home</span>
                                 <div className='link-line'></div>
                             </NavLink>
@@ -57,6 +58,7 @@ function TopNav(props) {
                         <Button color="inherit">
                             <NavLink activeClassName='active-nav' to="/aboutme">
                                 <div className='link-line-a'></div>
+                                <div className='link-line-z'></div>
                                 <span>Bio</span>
                                 <div className='link-line'></div>
                             </NavLink>
@@ -64,6 +66,7 @@ function TopNav(props) {
                         <Button color="inherit">
                             <NavLink activeClassName='active-nav' to="/projects">
                                 <div className='link-line-a'></div>
+                                <div className='link-line-z'></div>
                                 <span>Projects</span>
                                 <div className='link-line'></div>
                             </NavLink>
@@ -71,6 +74,7 @@ function TopNav(props) {
                         <Button color="inherit">
                             <NavLink activeClassName='active-nav' to="/resume">
                                 <div className='link-line-a'></div>
+                                <div className='link-line-z'></div>
                                 <span>Resume</span>
                                 <div className='link-line'></div>
                             </NavLink>
@@ -78,6 +82,7 @@ function TopNav(props) {
                         <Button color="inherit">
                             <NavLink activeClassName='active-nav' to="/contact">
                                 <div className='link-line-a'></div>
+                                <div className='link-line-z'></div>
                                 <span>Contact</span>
                                 <div className='link-line'></div>
                             </NavLink>

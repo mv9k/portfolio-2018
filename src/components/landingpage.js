@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './landingpage.css';
 import Tilt from 'react-tilt';
-import './mask1.png';
 
 const styles = theme => ({
     root: {
@@ -35,11 +34,11 @@ function LandingPage(props) {
                 max: 11,
                 reverse: true,
                 scale: 1,
-                perspective: 1600,
+                perspective: 1800,
             }} >
                 <Paper className={classes.root + ' ' + 'landing-paper-border'} elevation={22}>
                     <div className='Tilt-inner'>
-                        <Paper className={classes.root + ' ' + 'landing-paper-bg clip-path'} elevation={22}>
+                        <Paper className={classes.root + ' ' + 'landing-paper-bg'} elevation={22}>
                             <div className='Tilt-inner landing-paper-content'>
                                 <ScrollAnimation animateIn="fadeIn" delay={300}>
                                     <Paper className='portrait' elevation={22}>

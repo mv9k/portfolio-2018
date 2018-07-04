@@ -4,9 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ScrollAnimation from 'react-animate-on-scroll';
-import './landingpage.css';
+import './aboutme.css';
 import Tilt from 'react-tilt';
-import './mask1.png';
 
 const styles = theme => ({
     root: {
@@ -35,11 +34,11 @@ function AboutMe(props) {
                 max: 11,
                 reverse: true,
                 scale: 1,
-                perspective: 1600,
+                perspective: 1800,
             }} >
                 <Paper className={classes.root + ' ' + 'aboutme-paper-border'} elevation={22}>
                     <div className='Tilt-inner'>
-                        <Paper className={classes.root + ' ' + 'aboutme-paper-bg clip-path'} elevation={22}>
+                        <Paper className={classes.root + ' ' + 'aboutme-paper-bg'} elevation={22}>
                             <div className='Tilt-inner landing-paper-content'>
                                 <ScrollAnimation animateIn="fadeIn" delay={300}>
                                     <Paper className='portrait' elevation={22}>
@@ -48,14 +47,32 @@ function AboutMe(props) {
                                         </div>
                                     </Paper>
                                 </ScrollAnimation>
-                                <Typography variant="headline" component="h2">
-                                    <span className='blue'> / About </span>
-                                </Typography>
-                                <Typography component="p">
-                                    <span className='bio-text'>
-                                        No vix error mediocritatem, sed alii tempor maiorum et. In facilisi singulis scriptorem qui. Dicit propriae instructior an pro. Eleifend intellegebat ea nam, ridens persequeris no mea, id sed lorem salutandi. Id eos noster hendrerit adipiscing, his ex putent nemore accommodare.
-                                    </span>
-                                </Typography>
+                                {/*<Typography variant="headline" component="h2">*/}
+                                    {/*<span className='blue'> / About </span>*/}
+                                {/*</Typography>*/}
+                                {/*<Typography component="p">*/}
+                                    {/*<span className='bio-text'>*/}
+                                        {/*No vix error mediocritatem, sed alii tempor maiorum et. In facilisi singulis scriptorem qui. Dicit propriae instructior an pro. Eleifend intellegebat ea nam, ridens persequeris no mea, id sed lorem salutandi. Id eos noster hendrerit adipiscing, his ex putent nemore accommodare.*/}
+                                    {/*</span>*/}
+                                {/*</Typography>*/}
+                            </div>
+                        </Paper>
+                    </div>
+                </Paper>
+                <Paper className='second-layer' elevation={6}>
+                    <div className='Tilt-inner'>
+                        <Paper elevation={6}>
+                            <div className='Tilt-inner landing-paper-content'>
+                                <ScrollAnimation animateIn="fadeIn" delay={600}>
+                                    <Typography variant="headline" component="h2">
+                                        <span className='blue'> / About </span>
+                                    </Typography>
+                                    <Typography component="p">
+                                        <span className='bio-text'>
+                                            No vix error mediocritatem, sed alii tempor maiorum et. In facilisi singulis scriptorem qui. Dicit propriae instructior an pro. Eleifend intellegebat ea nam, ridens persequeris no mea, id sed lorem salutandi. Id eos noster hendrerit adipiscing, his ex putent nemore accommodare.
+                                        </span>
+                                    </Typography>
+                                </ScrollAnimation>
                             </div>
                         </Paper>
                     </div>
