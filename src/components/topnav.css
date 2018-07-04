@@ -1,0 +1,45 @@
+a {
+    letter-spacing: .3em;
+    padding: 1.2em;
+    font-size: 1.2em;
+    font-weight: 300 !important;
+    color: #dcdcdc !important;
+    text-decoration: none;
+    transition: all .6s;
+}
+
+.link-line {
+    top: 6px;
+}
+
+.link-line, .link-line-a {
+    opacity: 0;
+    transition: all 1s;
+    height: 1px;
+    width: 1px;
+    background: white;
+    position: relative;
+}
+
+.link-line-a {
+    float: right;
+    top: -6px !important;
+}
+
+button:hover .link-line, button:hover .link-line-a {
+    width: 100%;
+    opacity: 1;
+    float: inside;
+}
+
+button:hover {
+    background: none !important;
+}
+
+.active-nav {
+    color: #ffffff !important;
+}
+
+.name {
+    font-weight: 300 !important;
+}
