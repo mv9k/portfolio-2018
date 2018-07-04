@@ -43,7 +43,7 @@ function LandingPage(props) {
                                 <ScrollAnimation animateIn="fadeIn" delay={300}>
                                     <Paper className='portrait' elevation={22}>
                                         <div className='Tilt-inner'>
-                                            <img className='soft-shadow tech-mask' src='http://gifimage.net/wp-content/uploads/2017/10/mountain-gif-7.gif' />
+                                            <img src='https://media.giphy.com/media/AIGF7ljcNKZI4/giphy.gif' />
                                         </div>
                                     </Paper>
                                 </ScrollAnimation>

@@ -48,7 +48,7 @@ function TopNav(props) {
                     {/*</Typography>*/}
                     <div className={classes.navLinks}>
                         <Button color="inherit">
-                            <NavLink activeClassName='active-nav' to="/">
+                            <NavLink activeClassName='active-nav' to="/" exact={true}>
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
                                 <span>Home</span>

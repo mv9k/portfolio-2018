@@ -29,7 +29,7 @@ div.containment {
   transition: all 1s ease-in-out;
 }
 
-div.containment.landing-bg {
+div.containment.landing-bg, div.containment.projects-bg, div.containment.resume-bg, div.containment.contact-bg {
   background: black;
   /*background: #f1f1f1;  !* fallback for old browsers *!*/
   /*background: -webkit-linear-gradient(7deg, #c3b5a2, #dcdcdc);  !* Chrome 10-25, Safari 5.1-6 *!*/

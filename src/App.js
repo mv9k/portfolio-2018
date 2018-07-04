@@ -13,6 +13,8 @@ class App extends Component {
               case '/': return 'landing-bg';
               case '/aboutme': return 'aboutme-bg';
               case '/projects': return 'projects-bg';
+              case '/resume': return 'resume-bg';
+              case '/contact': return 'contact-bg';
           }
       };
       console.log(this.props.location.pathname);

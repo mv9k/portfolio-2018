@@ -93,16 +93,14 @@ function Projects(props) {
             <Grid fluid>
                 <ScrollAnimation animateIn="fadeIn">
                     <Row className={classes.projectsRow}>
-                        <Col className={classes.projectsItem} xs={12} sm={6} md={6} lg={4}>
-                            <ScrollAnimation animateIn="fadeIn" delay={100}>
-                                <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
-                            </ScrollAnimation>
+                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
+                            <img className={classes.projectsImg} src='http://via.placeholder.com/240x300' />
                         </Col>
-                        <Col className={classes.projectsItem} xs={12} sm={6} md={6} lg={4}>
+                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
                             <Card className={classes.card}>
                                 <CardMedia
                                     className={classes.media}
-                                    image="http://via.placeholder.com/350x450"
+                                    image="http://via.placeholder.com/240x300"
                                     title="Contemplative Reptile"
                                 />
                                 <CardContent className='card-desc'>
@@ -132,17 +130,17 @@ function Projects(props) {
                                 </CardContent>
                             </Card>
                         </Col>
-                        <Col className={classes.projectsItem} xs={12} sm={6} md={6} lg={4}>
+                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
                             <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
                         </Col>
                     </Row>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn">
                     <Row className={classes.projectsRow}>
-                        <Col className={classes.projectsItem} xs={12} sm={6} md={6} lg={4}>
+                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
                             <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
                         </Col>
-                        <Col className={classes.projectsItem} xs={12} sm={6} md={6} lg={4}>
+                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
                             <Card className={classes.card}>
                                 <CardMedia
                                     className={classes.media}
@@ -176,17 +174,17 @@ function Projects(props) {
                                 </CardContent>
                             </Card>
                         </Col>
-                        <Col className={classes.projectsItem} xs={12} sm={6} md={6} lg={4}>
+                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
                             <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
                         </Col>
                     </Row>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn">
                     <Row className={classes.projectsRow}>
-                        <Col className={classes.projectsItem} xs={12} sm={6} md={6} lg={4}>
+                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
                             <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
                         </Col>
-                        <Col className={classes.projectsItem} xs={12} sm={6} md={6} lg={4}>
+                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
                             <Card className={classes.card}>
                                 <CardMedia
                                     className={classes.media}
@@ -220,7 +218,7 @@ function Projects(props) {
                                 </CardContent>
                             </Card>
                         </Col>
-                        <Col className={classes.projectsItem} xs={12} sm={6} md={6} lg={4}>
+                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
                             <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
                         </Col>
                     </Row>
