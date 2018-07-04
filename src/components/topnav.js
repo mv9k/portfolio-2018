@@ -16,7 +16,7 @@ const styles = {
     },
     bar: {
         textAlign: 'center',
-        background: 'rgba(0,0,0, 0.13)',
+        background: 'none',
     },
     flex: {
         flex: 1,
@@ -48,9 +48,16 @@ function TopNav(props) {
                     {/*</Typography>*/}
                     <div className={classes.navLinks}>
                         <Button color="inherit">
+                            <NavLink activeClassName='active-nav' to="/">
+                                <div className='link-line-a'></div>
+                                <span>Home</span>
+                                <div className='link-line'></div>
+                            </NavLink>
+                        </Button>
+                        <Button color="inherit">
                             <NavLink activeClassName='active-nav' to="/aboutme">
                                 <div className='link-line-a'></div>
-                                <span>About</span>
+                                <span>Bio</span>
                                 <div className='link-line'></div>
                             </NavLink>
                         </Button>

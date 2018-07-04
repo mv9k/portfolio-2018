@@ -2,8 +2,8 @@ a {
     letter-spacing: .3em;
     padding: 1.2em;
     font-size: 1.2em;
-    font-weight: 300 !important;
-    color: #dcdcdc !important;
+    font-weight: 400 !important;
+    color: #111111 !important;
     text-decoration: none;
     transition: all .6s;
 }
@@ -17,8 +17,8 @@ a {
     transition: all 1s;
     height: 1px;
     width: 1px;
-    background: white;
-    position: relative;
+    background: rgb(241,230,209);
+    /*background: radial-gradient(circle, rgba(241,230,209,1) 0%, rgba(241,230,209,1) 87%, rgba(0,212,255,0) 100%);    position: relative;*/
 }
 
 .link-line-a {
@@ -37,7 +37,8 @@ button:hover {
 }
 
 .active-nav {
-    color: #ffffff !important;
+    /*color: #f1e6d1 !important;*/
+    color: rgb(241,230,209) !important;
 }
 
 .name {

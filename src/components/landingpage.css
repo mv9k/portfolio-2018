@@ -1,0 +1,53 @@
+.bg {
+    transition: all 1s;
+    /*background: -moz-linear-gradient(123deg, rgba(33,35,41,1) 0%, rgba(86,87,97,1) 99%, rgba(86,87,97,1) 100%); !* ff3.6+ *!*/
+    /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(86,87,97,1)), color-stop(1%, rgba(86,87,97,1)), color-stop(100%, rgba(33,35,41,1))); !* safari4+,chrome *!*/
+    /*background: -webkit-linear-gradient(123deg, rgba(33,35,41,1) 0%, rgba(86,87,97,1) 99%, rgba(86,87,97,1) 100%); !* safari5.1+,chrome10+ *!*/
+    /*background: -o-linear-gradient(123deg, rgba(33,35,41,1) 0%, rgba(86,87,97,1) 99%, rgba(86,87,97,1) 100%); !* opera 11.10+ *!*/
+    /*background: -ms-linear-gradient(123deg, rgba(33,35,41,1) 0%, rgba(86,87,97,1) 99%, rgba(86,87,97,1) 100%); !* ie10+ *!*/
+    /*background: linear-gradient(327deg, rgba(33,35,41,1) 0%, rgba(86,87,97,1) 99%, rgba(86,87,97,1) 100%); !* w3c *!*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565761', endColorstr='#212329',GradientType=0 ); !* ie6-9 *!*/
+}
+
+.portrait {
+    margin-bottom: 3em;
+    width: 200px;
+    height: 300px;
+    border-radius: 0 !important;
+    /*-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
+    /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
+    /*-webkit-clip-path: polygon(80% 0, 100% 25%, 100% 100%, 19% 100%, 0% 75%, 0 0);*/
+    /*clip-path: polygon(80% 0, 100% 25%, 100% 100%, 19% 100%, 0% 75%, 0 0);*/
+    /*-webkit-mask-image: -webkit-gradient(linear, left 70%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))*/
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+}
+
+.bio-text {
+    color: #e5e5e5 !important;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 1em 0;
+}
+
+/*.tech-mask {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*-webkit-mask: url("./mask1.png");*/
+    /*-webkit-mask-size: cover;*/
+    /*-webkit-mask-position: center;*/
+    /*-webkit-mask-repeat: no-repeat;*/
+/*}*/
+
+.soft-shadow {
+    box-shadow:0 2px 16px #000000;
+}
+
+.landing-paper-content {
+    padding: 4em 6em;
+    color: #cd9f7a !important;
+}
