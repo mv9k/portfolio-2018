@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './projects.css';
 import { withStyles } from '@material-ui/core/styles';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import tileData from './tileData';
+// import GridList from '@material-ui/core/GridList';
+// import GridListTile from '@material-ui/core/GridListTile';
+// import GridListTileBar from '@material-ui/core/GridListTileBar';
+// import tileData from './tileData';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
+// import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
@@ -142,9 +142,10 @@ function Projects(props) {
                         </Col>
                         <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
                             <Card className={classes.card}>
+                                <div className='shine'></div>
                                 <CardMedia
                                     className={classes.media}
-                                    image="http://via.placeholder.com/350x450"
+                                    image="http://via.placeholder.com/350x550"
                                     title="Contemplative Reptile"
                                 />
                                 <CardContent className='card-desc'>

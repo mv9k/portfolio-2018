@@ -31,6 +31,10 @@ const styles = {
         width: '100vw',
         // flex: 1,
         // justifyContent: 'center',
+    },
+    toolBar: {
+        paddingRight: '0 !important',
+        paddingLeft: '0 !important',
     }
 };
 
@@ -39,7 +43,7 @@ function TopNav(props) {
     return (
         <div className={classes.root}>
             <AppBar className={classes.bar} position="static">
-                <Toolbar>
+                <Toolbar className={classes.toolBar}>
                     {/*<IconButton className={classes.menuButton} color="inherit" aria-label="Menu">*/}
                         {/*<MenuIcon />*/}
                     {/*</IconButton>*/}
@@ -53,6 +57,8 @@ function TopNav(props) {
                                 <div className='link-line-z'></div>
                                 <span>Home</span>
                                 <div className='link-line'></div>
+                                <div className='link-line-y'></div>
+                                <div className='link-line-yb'></div>
                             </NavLink>
                         </Button>
                         <Button color="inherit">
@@ -61,6 +67,8 @@ function TopNav(props) {
                                 <div className='link-line-z'></div>
                                 <span>Bio</span>
                                 <div className='link-line'></div>
+                                <div className='link-line-y'></div>
+                                <div className='link-line-yb'></div>
                             </NavLink>
                         </Button>
                         <Button color="inherit">
@@ -69,14 +77,18 @@ function TopNav(props) {
                                 <div className='link-line-z'></div>
                                 <span>Projects</span>
                                 <div className='link-line'></div>
+                                <div className='link-line-y'></div>
+                                <div className='link-line-yb'></div>
                             </NavLink>
                         </Button>
                         <Button color="inherit">
                             <NavLink activeClassName='active-nav' to="/resume">
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
-                                <span>Resume</span>
+                                <span>Services</span>
                                 <div className='link-line'></div>
+                                <div className='link-line-y'></div>
+                                <div className='link-line-yb'></div>
                             </NavLink>
                         </Button>
                         <Button color="inherit">
@@ -85,6 +97,8 @@ function TopNav(props) {
                                 <div className='link-line-z'></div>
                                 <span>Contact</span>
                                 <div className='link-line'></div>
+                                <div className='link-line-y'></div>
+                                <div className='link-line-yb'></div>
                             </NavLink>
                         </Button>
                     </div>

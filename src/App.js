@@ -6,6 +6,7 @@ import {Link, Route, withRouter} from 'react-router-dom';
 import TopNav from './components/topnav';
 
 class App extends Component {
+
   render() {
       const {location: {pathname}} = this.props;
       const getBg = ()=>{
@@ -17,15 +18,10 @@ class App extends Component {
               case '/contact': return 'contact-bg';
           }
       };
-      console.log(this.props.location.pathname);
     return (
       <div className={'containment' + ' ' + getBg()}>
-
-              <TopNav className={getBg()}>
-              </TopNav>
-
-              <Main></Main>
-
+          <TopNav className={getBg()}></TopNav>
+          <Main></Main>
       </div>
     );
   }

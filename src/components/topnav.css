@@ -22,6 +22,31 @@ a {
     width: 100%;
 }
 
+.link-line-y, .link-line-yb {
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+    height: 1px;
+    width: 1px;
+    background: rgb(241,230,209);
+}
+
+button:hover .link-line-y, .active-nav .link-line-y {
+    position: absolute;
+    height: 1.4em !important;
+    opacity: 1;
+    top: 0;
+    left: 2.2em;
+}
+
+button:hover .link-line-yb, .active-nav .link-line-yb {
+    position: absolute;
+    height: 1.4em !important;
+    opacity: 1;
+    bottom: 0;
+    right: 2.2em;
+}
+
 .link-line, .link-line-a {
     position: relative;
     opacity: 0;

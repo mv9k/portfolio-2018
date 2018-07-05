@@ -1,0 +1,38 @@
+.contact-form-container {
+    margin: 11em;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+label[class*=' MuiFormLabel-focused'],div[class^='MuiFormLabel-focused'] {
+    color: red !important;
+    bottom: -6em;
+}
+
+.contact-field {
+    border: 1px solid rgb(241,230,209) !important;
+    margin: 1.3em 0;
+    /*-webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);*/
+    /*clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);*/
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(38,40,48,0)), color-stop(55%, rgba(38,40,48,0.55)), color-stop(100%, rgba(38,40,48,1)));
+    background: -webkit-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%);
+    background: -o-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%);
+    background: linear-gradient(269deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262830', endColorstr='#262830',GradientType=1 );
+    -webkit-box-shadow: inset 0px 0px 39px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 39px -8px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 39px -8px rgba(0,0,0,0.75);
+}
+
+.contact-field label {
+    letter-spacing: .1em;
+    font-size: 1.5em;
+    left: .5em;
+}
+
+input, textarea {
+    font-size: 1.2em !important;
+    padding-bottom: .2em !important;
+}
