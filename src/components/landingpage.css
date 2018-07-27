@@ -12,8 +12,8 @@
 .portrait {
     margin-bottom: 3em;
     /*width: 240px;*/
-    width: 70%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 250px;
     /*height: 300px;*/
     border-radius: 0 !important;
     /*-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
@@ -26,30 +26,43 @@
     /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
     /*filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));*/
 
-    -webkit-clip-path: polygon(100% 0, 94% 42%, 66% 63%, 49% 100%, 0 100%, 0 0);
-    clip-path: polygon(100% 0, 94% 42%, 66% 63%, 49% 100%, 0 100%, 0 0);
-    filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
+    /*-webkit-clip-path: polygon(100% 0, 94% 42%, 66% 63%, 49% 100%, 0 100%, 0 0);*/
+    /*clip-path: polygon(100% 0, 94% 42%, 66% 63%, 49% 100%, 0 100%, 0 0);*/
+    /*-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 0);*/
+    /*clip-path: polygon(50% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 0);*/
+    /*filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.2));*/
 }
 
 .bio-text {
     color: #e5e5e5 !important;
-    font-size: 1.5em;
-    font-weight: 300;
+    font-size: 1.1em !important;
+    font-weight: lighter !important;
     padding: 1em 0;
 }
 
 .bio-title {
+    font-size: 2em;
+    line-height: 1.2em;
     font-weight: lighter;
     letter-spacing: .12em;
 }
 
 .tab-text {
+    text-align: center;
     letter-spacing: .3em;
-    color: #e5e5e5 !important;
+    color: rgb(182, 143, 112) !important;
     font-weight: lighter !important;
     font-size: 1em !important;
-    padding: .2em;
-    text-align: right;
+    /*-webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 18% 100%);*/
+    /*clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 18% 100%);*/
+    /*background: -moz-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%); !* ff3.6+ *!*/
+    /*background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(38,40,48,0)), color-stop(55%, rgba(38,40,48,0.55)), color-stop(100%, rgba(38,40,48,1))); !* safari4+,chrome *!*/
+    /*background: -webkit-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%); !* safari5.1+,chrome10+ *!*/
+    /*background: -o-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%); !* opera 11.10+ *!*/
+    /*background: -ms-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%); !* ie10+ *!*/
+    /*background: linear-gradient(269deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%); !* w3c *!*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262830', endColorstr='#262830',GradientType=1 ); !* ie6-9 *!*/
+
 }
 
 .email-icon, .phone-icon {
@@ -81,7 +94,7 @@
 .landing-paper-content {
     position: relative;
     padding: 4em;
-    color: #cd9f7a !important;
+    color: rgb(182, 143, 112) !important;
 }
 
 .landing-tab {
@@ -89,12 +102,12 @@
     background-color: unset !important;
     border-radius: 0 !important;
     padding: .4em;
-    top: -3.1em;
-    right: -.2em;
+    top: -5.2em;
+    right: -1.74em;
     position: absolute;
     width: 40em;
-    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 18% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 18% 100%);
     background: -moz-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(38,40,48,0)), color-stop(55%, rgba(38,40,48,0.55)), color-stop(100%, rgba(38,40,48,1))); /* safari4+,chrome */
     background: -webkit-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%); /* safari5.1+,chrome10+ */
@@ -104,29 +117,37 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262830', endColorstr='#262830',GradientType=1 ); /* ie6-9 */
 }
 
+.top-left-corner {
+    height: 1px;
+    width: 1px;
+    position: relative;
+    left: -2.6em;
+    top: -4em;
+}
+
 .top-left-y {
-    top: -3em;
-    left: -7.5em;
-    position: absolute;
-    width: .1em;
-    height: 2em;
-    background: #e4d8c2;
-    opacity: .3;
+    /*top: 5em;*/
+    /*left: 5em;*/
+    /*position: absolute;*/
+    width: 1px;
+    height: 4em;
+    background: rgb(245, 222, 195);
+    opacity: .4;
 }
 
 .top-left-x {
-    background: #e4d8c2;
-    width: 2em;
-    height: .1em;
-    position: absolute;
-    top: -3em;
-    left: -7.4em;
-    opacity: .3;
+    background: rgb(245, 222, 195);
+    width: 4em;
+    height: 1px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*top: 5em;*/
+    /*left: 5em;*/
+    opacity: .4;
 }
 
-#video-background {
-    /*  making the video fullscreen  */
-    opacity: .3;
+.video-background {
+    opacity: .4;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -135,13 +156,69 @@
     width: auto;
     height: auto;
     z-index: 0;
-    top: 5.4em;
+    top: 5.06em;
 }
 
-.blue, .green {
-    width: 2rem;
-    height: 2rem;
-    margin: .5rem;
-    background: #e5e5e5;
+.angle-div {
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(234, 22, 22, 0)), color-stop(1%, rgba(86, 87, 97, 0)), color-stop(100%, rgba(0,0,0,0.69)));
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    transform: skewX(-45deg);
+    z-index: -100;
+}
+
+.underline {
+    opacity: 1;
+    width: 2em;
+    height: 1px;
+    background: rgb(182, 143, 112);
+}
+
+.portrait-col {
+    text-align: center;
+}
+
+.social-grid {
+    margin: 2em;
+}
+
+.social-grid-col {
+    font-size: .7em;
+    /*border: 1px solid #15171b;*/
+    text-align: center;
+    padding: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.social-link:hover {
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .6));
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(234, 22, 22, 0)), color-stop(1%, rgba(86, 87, 97, 0)), color-stop(100%, rgba(224, 224, 255, 0.07)));
+}
+
+.social-link {
+    color: rgb(182, 143, 112) !important;
+    transition: all 1s;
+    background: none;
+    transform: rotate(45deg);
+    border: 1px solid rgb(182, 143, 112);
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    padding: 0;
+    display: block;
+    font-weight: 300 !important;
+    margin: 0 auto;
+}
+
+.social-link > .social-icon {
+    transform: rotate(-45deg) !important;
+    height: 100%;
+    width: 100%;
+}
+
+a.social-link div svg {
+    height: auto;
+    width: 3em;
 }
 

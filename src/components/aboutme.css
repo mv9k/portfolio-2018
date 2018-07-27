@@ -1,6 +1,22 @@
 .bg {
     background: white;
 }
+
+.nav {
+    display: none;
+}
+
+.images-wrap div img {
+    max-height: 100%;
+    /*overflow: hidden;*/
+}
+
+.login-right-col {
+    position: relative;
+    overflow: hidden;
+    /*padding-left: 5em;*/
+}
+
 .main-paper {
     height: 66vh;
     background: #131212;  /* fallback for old browsers */
@@ -11,6 +27,90 @@
     background: -ms-radial-gradient(bottom, ellipse cover, rgba(124,133,142,1) 0%, rgba(19,18,18,1) 76%, rgba(19,18,18,1) 100%); /* ie10+ */
     background:radial-gradient(ellipse at bottom, rgba(124,133,142,1) 0%, rgba(19,18,18,1) 76%, rgba(19,18,18,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c858e', endColorstr='#131212',GradientType=1 ); /* ie6-9 */
+}
+
+.full-height {
+    position: relative;
+}
+
+.full-height, .full-height div:not(.login-left-col) {
+    height: 100% !important;
+}
+
+.login-left-col {
+    padding-left: 6em;
+}
+
+.images-wrap div img {
+    height: 100% !important;
+    width: auto !important;
+    -webkit-clip-path: polygon(23% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(23% 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-box-shadow: inset 0px 0px 39px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 39px -8px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 39px -8px rgba(0,0,0,0.75);
+}
+
+.login-button {
+    margin: 2em 1em 1em 0 !important;
+    letter-spacing: .2em;
+    color: rgba(240, 229, 208, .6) !important;
+    border: 1px solid rgba(240, 229, 208, .6) !important;
+    transition: all .6s !important;
+    background: none;
+}
+
+.login-button:hover {
+    color: rgba(240, 229, 208, 1) !important;
+    border: 1px solid rgba(240, 229, 208, 1) !important;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(234, 22, 22, 0)), color-stop(1%, rgba(86, 87, 97, 0)), color-stop(100%, rgba(224, 224, 255, 0.07)));
+}
+
+.forgot-password {
+    margin: 1em 1em 1em 0 !important;
+    letter-spacing: .2em;
+    color: rgba(240, 229, 208, 0.5) !important;
+    padding: 0 !important;
+    transition: all .6s !important;
+    text-transform: none !important;
+}
+
+.forgot-password:hover {
+    color: rgba(240, 229, 208, 1) !important;
+}
+
+.login-field {
+    border-bottom: 1px solid rgba(241,230,209,.6) !important;
+    margin: 1.3em 0;
+}
+
+.login-field label {
+    color: rgba(241,230,209,.6);
+    letter-spacing: .1em;
+}
+
+.login-paper {
+    background-color: #000000e3 !important;
+    height: 66vh;
+    max-width: 1000px !important;
+    position: relative;
+    overflow: hidden;
+    padding: 0 !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F303A', endColorstr='#1A1C22', GradientType=0);
+    background: -moz-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0,0,0,0.26)), color-stop(100%, rgba(26, 28, 34, 1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* ie10+ */
+    background: linear-gradient(327deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* w3c */
+}
+
+.login-right-col {
+    /*background: url('../media/login-abstract.jpg') no-repeat center center fixed !important;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
 }
 
 .second-layer {

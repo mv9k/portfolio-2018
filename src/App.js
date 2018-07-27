@@ -9,6 +9,7 @@ class App extends Component {
 
   render() {
       const {location: {pathname}} = this.props;
+
       const getBg = ()=>{
           switch(this.props.location.pathname) {
               case '/': return 'landing-bg';
@@ -18,6 +19,7 @@ class App extends Component {
               case '/contact': return 'contact-bg';
           }
       };
+
     return (
       <div className={'containment' + ' ' + getBg()}>
           <TopNav className={getBg()}></TopNav>

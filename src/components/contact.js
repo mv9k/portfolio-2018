@@ -12,7 +12,7 @@ class Contact extends Component {
     };
 
     render() {
-        const { classes } = this.props;
+        // const { classes } = this.props;
 
         return(
             <div className='contact-form-container'>

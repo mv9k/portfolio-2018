@@ -13,10 +13,12 @@ import './topnav.css'
 const styles = {
     root: {
         flexGrow: 1,
+        zIndex: 1000,
     },
     bar: {
         textAlign: 'center',
         background: 'none',
+        backgroundColor: '#1f2127 !important',
     },
     flex: {
         flex: 1,
@@ -31,6 +33,7 @@ const styles = {
         width: '100vw',
         // flex: 1,
         // justifyContent: 'center',
+        borderBottom: '1px solid #1d1f25',
     },
     toolBar: {
         paddingRight: '0 !important',
@@ -55,7 +58,7 @@ function TopNav(props) {
                             <NavLink activeClassName='active-nav' to="/" exact={true}>
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
-                                <span>Home</span>
+                                <span className={'nav-button'}>Home</span>
                                 <div className='link-line'></div>
                                 <div className='link-line-y'></div>
                                 <div className='link-line-yb'></div>
@@ -65,7 +68,7 @@ function TopNav(props) {
                             <NavLink activeClassName='active-nav' to="/aboutme">
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
-                                <span>Bio</span>
+                                <span className={'nav-button'}>Login</span>
                                 <div className='link-line'></div>
                                 <div className='link-line-y'></div>
                                 <div className='link-line-yb'></div>
@@ -75,7 +78,7 @@ function TopNav(props) {
                             <NavLink activeClassName='active-nav' to="/projects">
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
-                                <span>Projects</span>
+                                <span className={'nav-button'}>Work</span>
                                 <div className='link-line'></div>
                                 <div className='link-line-y'></div>
                                 <div className='link-line-yb'></div>
@@ -85,7 +88,7 @@ function TopNav(props) {
                             <NavLink activeClassName='active-nav' to="/resume">
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
-                                <span>Services</span>
+                                <span className={'nav-button'}>Services</span>
                                 <div className='link-line'></div>
                                 <div className='link-line-y'></div>
                                 <div className='link-line-yb'></div>
@@ -95,7 +98,7 @@ function TopNav(props) {
                             <NavLink activeClassName='active-nav' to="/contact">
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
-                                <span>Contact</span>
+                                <span className={'nav-button'}>Contact</span>
                                 <div className='link-line'></div>
                                 <div className='link-line-y'></div>
                                 <div className='link-line-yb'></div>

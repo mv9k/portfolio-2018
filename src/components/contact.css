@@ -7,8 +7,12 @@
 }
 
 label[class*=' MuiFormLabel-focused'],div[class^='MuiFormLabel-focused'] {
-    color: red !important;
+    color: rgba(240, 229, 208, 0.36) !important;
     bottom: -6em;
+}
+
+div[class*=' MuiInput-underline']:after {
+    border-bottom: none !important;
 }
 
 .contact-field {
@@ -27,12 +31,13 @@ label[class*=' MuiFormLabel-focused'],div[class^='MuiFormLabel-focused'] {
 }
 
 .contact-field label {
+    color: #f0e5d0;
     letter-spacing: .1em;
-    font-size: 1.5em;
     left: .5em;
 }
 
 input, textarea {
+    color: rgb(241,230,209) !important;
     font-size: 1.2em !important;
     padding-bottom: .2em !important;
 }
