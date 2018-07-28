@@ -84,9 +84,20 @@
     margin: 1.3em 0;
 }
 
-.login-field label {
+.message-field {
+    border: 1px solid rgba(241,230,209,.6) !important;
+    margin: 3em 0 1.3em 0 !important;
+    width: 100%;
+}
+
+.login-field label, .message-field label {
     color: rgba(241,230,209,.6);
     letter-spacing: .1em;
+}
+
+.message-field label {
+    transform: none;
+    margin: .2em;
 }
 
 .login-paper {

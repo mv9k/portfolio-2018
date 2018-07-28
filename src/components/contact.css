@@ -36,6 +36,10 @@ div[class*=' MuiInput-underline']:after {
     left: .5em;
 }
 
+.login-form-container {
+    min-width: 300px;
+}
+
 input, textarea {
     color: rgb(241,230,209) !important;
     font-size: 1.2em !important;

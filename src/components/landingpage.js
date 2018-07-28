@@ -81,9 +81,14 @@ function LandingPage(props) {
                         </div>
                         <Typography variant="headline" component="span" className='tab-text'>
                             {/*<Icon className='email-icon' icon={basic_mail}/>*/}
-                            email@gmail.com &nbsp; | &nbsp;
+                            <a href={'mailto:mv9kjw@gmail.com'}>
+                            mv9kjw@gmail.com
+                            </a>
+                            &nbsp; | &nbsp;
                             {/*<Icon className='phone-icon' icon={basic_smartphone}/>*/}
-                            555-555-5555
+                            <a href={'tel:1-801-762-9053'}>
+                            801-762-9053
+                            </a>
                         </Typography>
                         <div className='Tilt-inner landing-paper-content'>
 
@@ -134,19 +139,19 @@ function LandingPage(props) {
                             <Grid fluid className={'social-grid'}>
                                 <Row className={'no-pad'} center={'xs'}>
                                     <Col className={'social-grid-col'} xs={12} sm={3}>
-                                        <a href={'#'} className={'social-link'}>
+                                        <a href={'https://www.linkedin.com/in/kriswheeler/'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialLinkedinOutline}/>
                                             {/*<span>Linkedin </span>*/}
                                         </a>
                                     </Col>
                                     <Col className={'social-grid-col'} xs={12} sm={3}>
-                                        <a href={'#'} className={'social-link'}>
+                                        <a href={'https://github.com/mv9k'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialOctocat}/>
                                             {/*<span>Github</span>*/}
                                         </a>
                                     </Col>
                                     <Col className={'social-grid-col'} xs={12} sm={3}>
-                                        <a href={'#'} className={'social-link'}>
+                                        <a href={'https://codepen.io/mv9kjw/'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialCodepenOutline}/>
                                             {/*<span>Codepen</span>*/}
                                         </a>
