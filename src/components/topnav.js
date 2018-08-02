@@ -54,7 +54,7 @@ function TopNav(props) {
                         {/*Kristopher Wheeler*/}
                     {/*</Typography>*/}
                     <div className={classes.navLinks + ' ' + 'main-nav'}>
-                        <Button color="inherit">
+                        <Button color="inherit" className={'nav-button'}>
                             <NavLink activeClassName='active-nav' to="/" exact={true}>
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
@@ -74,7 +74,7 @@ function TopNav(props) {
                                 {/*<div className='link-line-yb'></div>*/}
                             {/*</NavLink>*/}
                         {/*</Button>*/}
-                        <Button color="inherit">
+                        <Button color="inherit" className={'nav-button'}>
                             <NavLink activeClassName='active-nav' to="/projects">
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
@@ -94,7 +94,7 @@ function TopNav(props) {
                                 {/*<div className='link-line-yb'></div>*/}
                             {/*</NavLink>*/}
                         {/*</Button>*/}
-                        <Button color="inherit">
+                        <Button color="inherit" className={'nav-button'}>
                             <NavLink activeClassName='active-nav' to="/contact">
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>

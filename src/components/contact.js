@@ -26,25 +26,6 @@ const images = [
     loginImg4,
 ];
 
-const styles = theme => ({
-    root: {
-        margin: '0 auto',
-        // width: '100vw',
-        ...theme.mixins.gutters(),
-        // paddingTop: theme.spacing.unit * 2,
-        // paddingBottom: theme.spacing.unit * 2,
-        borderRadius: 0,
-        // margin: '10vh 20vw',
-        minWidth: '50vw',
-        maxWidth: '70vw',
-        // padding: '.6em !important',
-    },
-    customTilt: {
-        padding: '6em',
-    }
-
-});
-
 // const updateField = (event) => {
 //     this.setState({
 //         [event.target.name]: event.target.value
@@ -79,13 +60,13 @@ class Contact extends Component {
         return (
             <div>
                 <ScrollAnimation animateIn="fadeIn">
-                    <Tilt className={this.props.customTilt + ' ' + 'Tilt'} options={{
+                    <Tilt className={'custom-tilt' + ' ' + 'Tilt'} options={{
                         max: 6,
                         reverse: false,
                         scale: 1,
                         perspective: 1800,
                     }}>
-                        <Paper className={this.props.root + ' ' + 'login-paper'} elevation={22}>
+                        <Paper className={'contact-root' + ' ' + 'login-paper'} elevation={22}>
                             <div className='Tilt-inner full-height'>
                                 <Grid className={'no-pad'}>
                                     <Row middle={'xs'}>
@@ -206,4 +187,4 @@ class Contact extends Component {
     }
 }
 
-export default withStyles(styles)(Contact);
+export default Contact;

@@ -81,12 +81,12 @@ function LandingPage(props) {
                         </div>
                         <Typography variant="headline" component="span" className='tab-text'>
                             {/*<Icon className='email-icon' icon={basic_mail}/>*/}
-                            <a href={'mailto:mv9kjw@gmail.com'}>
+                            <a href={'mailto:mv9kjw@gmail.com'} className={'contact-link'}>
                             mv9kjw@gmail.com
                             </a>
-                            &nbsp; | &nbsp;
+                            <span className={'vertical-divider'}>&nbsp; | &nbsp;</span>
                             {/*<Icon className='phone-icon' icon={basic_smartphone}/>*/}
-                            <a href={'tel:1-801-762-9053'}>
+                            <a href={'tel:1-801-762-9053'} className={'contact-link'}>
                             801-762-9053
                             </a>
                         </Typography>
@@ -106,14 +106,14 @@ function LandingPage(props) {
                             {/*<div className='Tilt-inner'></div>*/}
                             {/*</Paper>*/}
                             <Grid fluid className={'no-pad'}>
-                                <Row className={'no-pad'}>
+                                <Row className={'no-pad'} middle={'xs'}>
                                     <Col xs={12} sm={12} md={6} lg={6} className={'portrait-col'}>
                                         <ScrollAnimation animateIn="fadeIn" delay={300}>
                                             {/*<img src='https://media.giphy.com/media/AIGF7ljcNKZI4/giphy.gif' />*/}
                                             <img src={ portrait } className='portrait' />
                                         </ScrollAnimation>
                                     </Col>
-                                    <Col xs={12} sm={12} md={6} lg={6} className={'no-pad'}>
+                                    <Col xs={12} sm={12} md={6} lg={6} className={'no-pad bio-col'}>
                                         <Typography variant="headline" component="h3">
                                             <span className='gold bio-title'> Kristopher Wheeler </span>
                                             <Anime
@@ -144,13 +144,13 @@ function LandingPage(props) {
                                             {/*<span>Linkedin </span>*/}
                                         </a>
                                     </Col>
-                                    <Col className={'social-grid-col'} xs={12} sm={3}>
+                                    <Col className={'social-grid-col'} xs={6} sm={3}>
                                         <a href={'https://github.com/mv9k'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialOctocat}/>
                                             {/*<span>Github</span>*/}
                                         </a>
                                     </Col>
-                                    <Col className={'social-grid-col'} xs={12} sm={3}>
+                                    <Col className={'social-grid-col'} xs={6} sm={3}>
                                         <a href={'https://codepen.io/mv9kjw/'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialCodepenOutline}/>
                                             {/*<span>Codepen</span>*/}

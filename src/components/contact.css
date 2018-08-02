@@ -2,6 +2,23 @@
     margin: 11em;
 }
 
+.custom-tilt {
+    padding: 6em;
+}
+
+.contact-root {
+    margin: 0 auto;
+    /*// width: '100vw',*/
+/*...theme.mixins.gutters(),*/
+/*// paddingTop: theme.spacing.unit * 2,*/
+/*// paddingBottom: theme.spacing.unit * 2,*/
+    border-radius: 0;
+    /*// margin: '10vh 20vw',*/
+    min-width: 50vw;
+    max-width: 70vw;
+    /*padding: '.6em !important',*/
+}
+
 .contact-form {
     text-align: center;
 }
@@ -37,7 +54,7 @@ div[class*=' MuiInput-underline']:after {
 }
 
 .login-form-container {
-    min-width: 300px;
+    min-width: 100%;
 }
 
 input, textarea {

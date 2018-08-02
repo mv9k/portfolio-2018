@@ -135,3 +135,143 @@ div.containment.aboutme-bg, div.containment.landing-bg, div.containment.projects
 *[class^="MuiTouchRipple"] {
   display: none !important;
 }
+
+.Tilt {
+  height: 86.5vh;
+}
+
+/* Mobile media queries */
+@media only screen and (max-width: 374px) {
+  .nav-button {
+    font-size: .9em !important;
+  }
+  .bio-text {
+    padding: 6px 0 !important;
+  }
+}
+@media only screen and (max-width: 812px) {
+
+  .custom-tilt, *[class^="LandingPage-customTilt"] {
+    padding: 6px !important;
+  }
+
+  .login-left-col {
+    padding: 2em !important;
+  }
+
+  .login-right-col,
+  .top-left-corner,
+  .vertical-divider,
+  .portrait-col,
+  .underline {
+    display: none !important;
+  }
+
+  .nav-button {
+    padding: 8px 0 !important;
+  }
+
+  .contact-link {
+    font-size: .9em !important;
+    display: block;
+    padding: .5em !important;
+  }
+
+  .landing-paper-content, .landing-paper-bg {
+    padding: 1em !important;
+  }
+
+  .bio-title {
+    font-size: 7vw !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .bio-text {
+    font-size: 4.5vw !important;
+  }
+
+  .social-grid, .bio-col {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .landing-paper-bg {
+    height: 95% !important;
+  }
+
+  .bio-col {
+    margin: 2em auto;
+  }
+
+  .social-link {
+    height: 60px !important;
+    width: 60px !important;
+    line-height: 60px !important;
+  }
+
+  .social-grid-col {
+    margin-top: 1em !important;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
