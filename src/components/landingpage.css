@@ -92,9 +92,16 @@
 }
 
 .landing-paper-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     position: relative;
     padding: 4em;
     color: rgb(182, 143, 112) !important;
+}
+
+.landing-paper-content .container-fluid {
+    flex-grow: 1;
 }
 
 .landing-tab {
@@ -152,11 +159,11 @@
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 92%;
+    min-height: 100%;
     width: auto;
     height: auto;
     z-index: 0;
-    top: 5.06em;
+    /*top: 5.06em;*/
 }
 
 .angle-div {

@@ -70,7 +70,7 @@ class Contact extends Component {
                             <div className='Tilt-inner full-height'>
                                 <Grid className={'no-pad'}>
                                     <Row middle={'xs'}>
-                                        <Col className={'login-left-col'} xs={12} sm={4}>
+                                        <Col className={'login-left-col'} xs={12} sm={6}>
                                             <ScrollAnimation animateIn="fadeIn" delay={300}>
                                                 {/*<Paper className='portrait' elevation={22}>*/}
                                                 {/*<div className='Tilt-inner'>*/}
@@ -129,7 +129,7 @@ class Contact extends Component {
                                                 {/*</Typography>*/}
                                             </ScrollAnimation>
                                         </Col>
-                                        <Col className={'login-right-col'} xs={12} sm={8}>
+                                        <Col className={'login-right-col'} xs={12} sm={6}>
                                             <ScrollAnimation animateIn="fadeIn" delay={300}>
                                                 <Fade
                                                     images={images}

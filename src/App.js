@@ -22,7 +22,7 @@ class App extends Component {
 
     return (
       <div className={'containment' + ' ' + getBg()}>
-          <TopNav className={getBg()}></TopNav>
+          <TopNav></TopNav>
           <Main></Main>
       </div>
     );

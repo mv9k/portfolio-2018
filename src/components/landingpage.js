@@ -138,19 +138,19 @@ function LandingPage(props) {
                             </Grid>
                             <Grid fluid className={'social-grid'}>
                                 <Row className={'no-pad'} center={'xs'}>
-                                    <Col className={'social-grid-col'} xs={12} sm={3}>
+                                    <Col className={'social-grid-col'} xs={12} sm={4}>
                                         <a href={'https://www.linkedin.com/in/kriswheeler/'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialLinkedinOutline}/>
                                             {/*<span>Linkedin </span>*/}
                                         </a>
                                     </Col>
-                                    <Col className={'social-grid-col'} xs={6} sm={3}>
+                                    <Col className={'social-grid-col'} xs={6} sm={4}>
                                         <a href={'https://github.com/mv9k'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialOctocat}/>
                                             {/*<span>Github</span>*/}
                                         </a>
                                     </Col>
-                                    <Col className={'social-grid-col'} xs={6} sm={3}>
+                                    <Col className={'social-grid-col'} xs={6} sm={4}>
                                         <a href={'https://codepen.io/mv9kjw/'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialCodepenOutline}/>
                                             {/*<span>Codepen</span>*/}

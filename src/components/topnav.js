@@ -14,11 +14,12 @@ const styles = {
     root: {
         flexGrow: 1,
         zIndex: 1000,
+        position: 'relative',
     },
     bar: {
         textAlign: 'center',
         background: 'none',
-        backgroundColor: '#1f2127 !important',
+        // backgroundColor: '#1f2127 !important',
     },
     flex: {
         flex: 1,
@@ -44,7 +45,7 @@ const styles = {
 function TopNav(props) {
     const { classes } = props;
     return (
-        <div className={classes.root}>
+        <div className={classes.root + ' ' + 'top-nav'}>
             <AppBar className={classes.bar} position="static">
                 <Toolbar className={classes.toolBar}>
                     {/*<IconButton className={classes.menuButton} color="inherit" aria-label="Menu">*/}

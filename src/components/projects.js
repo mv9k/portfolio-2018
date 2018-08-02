@@ -7,6 +7,7 @@ import { withStyles } from '@material-ui/core/styles';
 // import GridListTileBar from '@material-ui/core/GridListTileBar';
 // import tileData from './tileData';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import Anime from 'react-anime';
 
 import Card from '@material-ui/core/Card';
 // import CardActions from '@material-ui/core/CardActions';
