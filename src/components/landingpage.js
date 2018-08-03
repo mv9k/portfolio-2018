@@ -54,30 +54,30 @@ function LandingPage(props) {
                 }} >
                     <Paper className={classes.root + ' ' + 'landing-paper-bg'} elevation={22}>
                         <div className={'top-left-corner'}>
-                            {/*<Anime*/}
-                                {/*opacity={0}*/}
-                                {/*duration={3000}*/}
-                                {/*loop={true}*/}
-                                {/*direction={'alternate'}*/}
-                                {/*width={'40px'}*/}
-                                {/*elasticity={0}*/}
-                                {/*easing={'easeInOutQuad'}*/}
-                            {/*>*/}
+                            <Anime
+                                opacity={0}
+                                duration={9000}
+                                loop={true}
+                                direction={'alternate'}
+                                width={'20em'}
+                                elasticity={3}
+                                easing={'easeInOutQuad'}
+                            >
                                 <div className='top-left-x'>
                                 </div>
-                            {/*</Anime>*/}
-                            {/*<Anime*/}
-                                {/*opacity={0}*/}
-                                {/*duration={3000}*/}
-                                {/*loop={true}*/}
-                                {/*direction={'alternate'}*/}
-                                {/*height={'40px'}*/}
-                                {/*elasticity={0}*/}
-                                {/*easing={'easeInOutQuad'}*/}
-                            {/*>*/}
+                            </Anime>
+                            <Anime
+                                opacity={0}
+                                duration={9000}
+                                loop={true}
+                                direction={'alternate'}
+                                height={'20em'}
+                                elasticity={3}
+                                easing={'easeInOutQuad'}
+                            >
                                 <div className='top-left-y'>
                                 </div>
-                            {/*</Anime>*/}
+                            </Anime>
                         </div>
                         <Typography variant="headline" component="span" className='tab-text'>
                             {/*<Icon className='email-icon' icon={basic_mail}/>*/}

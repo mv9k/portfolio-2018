@@ -57,6 +57,13 @@ div[class*=' MuiInput-underline']:after {
     min-width: 100%;
 }
 
+.contact-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 input, textarea {
     color: rgb(241,230,209) !important;
     font-size: 1.2em !important;

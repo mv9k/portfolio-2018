@@ -137,14 +137,14 @@
     /*left: 5em;*/
     /*position: absolute;*/
     width: 1px;
-    height: 4em;
+    height: 0;
     background: rgb(245, 222, 195);
     opacity: .4;
 }
 
 .top-left-x {
     background: rgb(245, 222, 195);
-    width: 4em;
+    width: 0;
     height: 1px;
     /*position: absolute;*/
     /*top: 0;*/

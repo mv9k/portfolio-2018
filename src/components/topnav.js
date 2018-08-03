@@ -14,7 +14,7 @@ const styles = {
     root: {
         flexGrow: 1,
         zIndex: 1000,
-        position: 'relative',
+        position: 'fixed',
     },
     bar: {
         textAlign: 'center',
@@ -34,7 +34,7 @@ const styles = {
         width: '100vw',
         // flex: 1,
         // justifyContent: 'center',
-        borderBottom: '1px solid #1d1f25',
+        // borderBottom: '1px solid #1d1f25',
     },
     toolBar: {
         paddingRight: '0 !important',

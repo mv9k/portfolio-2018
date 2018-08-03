@@ -101,6 +101,7 @@
 }
 
 .login-paper {
+    border-radius: 0 !important;
     background-color: #000000e3 !important;
     height: 66vh;
     max-width: 1000px !important;

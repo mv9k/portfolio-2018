@@ -1,3 +1,8 @@
+.main-container {
+  top: 74px;
+  position: relative;
+}
+
 .no-pad {
   padding: 0 !important;
 }
@@ -199,7 +204,7 @@ div.containment.aboutme-bg, div.containment.landing-bg, div.containment.projects
     margin: 0 !important;
   }
 
-  .landing-paper-bg {
+  .landing-paper-bg, .login-paper {
     height: 95% !important;
   }
 

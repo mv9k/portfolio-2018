@@ -58,7 +58,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <div>
+            <div className={'contact-container'}>
                 <ScrollAnimation animateIn="fadeIn">
                     <Tilt className={'custom-tilt' + ' ' + 'Tilt'} options={{
                         max: 6,

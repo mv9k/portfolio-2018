@@ -7,6 +7,15 @@ import TopNav from './components/topnav';
 
 class App extends Component {
 
+  componentDidMount() {
+      console.log(' ____  __.      .__          __      __ \n' +
+          '|    |/ _|______|__| ______ /  \\    /  \\\n' +
+          '|      < \\_  __ \\  |/  ___/ \\   \\/\\/   /\n' +
+          '|    |  \\ |  | \\/  |\\___ \\   \\        / \n' +
+          '|____|__ \\|__|  |__/____  >   \\__/\\  /  \n' +
+          '        \\/              \\/         \\/   ');
+  }
+
   render() {
       const {location: {pathname}} = this.props;
 
@@ -23,7 +32,9 @@ class App extends Component {
     return (
       <div className={'containment' + ' ' + getBg()}>
           <TopNav></TopNav>
-          <Main></Main>
+          <div className={'main-container'}>
+            <Main></Main>
+          </div>
       </div>
     );
   }

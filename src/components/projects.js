@@ -8,6 +8,10 @@ import { withStyles } from '@material-ui/core/styles';
 // import tileData from './tileData';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Anime from 'react-anime';
+import akoWahiVid from './projects-data/media/akowahi.mp4';
+
+import Data from './projects-data/projectData';
+import PixiComponent from './PixiComponent';
 
 import Card from '@material-ui/core/Card';
 // import CardActions from '@material-ui/core/CardActions';
@@ -18,12 +22,15 @@ import Typography from '@material-ui/core/Typography';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
+// import PixiComponent from './PixiComponent';
+
 const styles = theme => ({
     root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
-        overflow: 'hidden',
+        width: 'auto',
+        height: '100vh !important'
+        // flexWrap: 'wrap',
+        // justifyContent: 'space-around',
+        // overflow: 'hidden',
     },
     gridList: {
         width: '100%',
@@ -81,169 +88,71 @@ function Projects(props) {
     const { classes } = props;
 
     return (
-
         <div className={classes.root}>
-            {/*<div className="row custom-bar">*/}
-                {/*<div className="col-xs-12*/}
-                {/*col-sm-8*/}
-                {/*col-md-6*/}
-                {/*col-lg-4">*/}
-                    {/*<div className="box">Responsive</div>*/}
-                {/*</div>*/}
+            <video autoPlay loop muted className={'project-video'}>
+                <source
+                    src={akoWahiVid}
+                    type="video/mp4"></source>
+            </video>
+            <PixiComponent/>
+            <h3 className={'project-title'}>{Data[1].title}</h3>
+            {/*<div className="hex-container">*/}
+
+                {/*<Anime opacity={'1'} duration={9000} loop={false} delay={100 + (Math.random() * (300-100))}>*/}
+                    {/*<div className="hex">*/}
+                        {/*<div className={'hex-img'}>Hex Grid</div>*/}
+                    {/*</div>*/}
+                {/*</Anime>*/}
+
+                {/*<Anime opacity={'1'} duration={9000} loop={false} delay={100 + (Math.random() * (300-100))}>*/}
+                    {/*<div className="hex">*/}
+                        {/*<div className={'hex-img'}>Hex Grid</div>*/}
+                    {/*</div>*/}
+                {/*</Anime>*/}
+
+                {/*<Anime opacity={'1'} duration={9000} loop={false} delay={100 + (Math.random() * (300-100))}>*/}
+                    {/*<div className="hex">*/}
+                        {/*<div className={'hex-img'}>Hex Grid</div>*/}
+                    {/*</div>*/}
+                {/*</Anime>*/}
+
+                {/*<Anime opacity={'1'} duration={9000} loop={false} delay={100 + (Math.random() * (300-100))}>*/}
+                    {/*<div className="hex">*/}
+                        {/*<div className={'hex-img'}>Hex Grid</div>*/}
+                    {/*</div>*/}
+                {/*</Anime>*/}
+
+                {/*<Anime opacity={'1'} duration={9000} loop={false} delay={100 + (Math.random() * (300-100))}>*/}
+                    {/*<div className="hex">*/}
+                        {/*<div className={'hex-img'}>Hex Grid</div>*/}
+                    {/*</div>*/}
+                {/*</Anime>*/}
+
+                {/*<Anime opacity={'1'} duration={9000} loop={false} delay={100 + (Math.random() * (300-100))}>*/}
+                    {/*<div className="hex">*/}
+                        {/*<div className={'hex-img'}>Hex Grid</div>*/}
+                    {/*</div>*/}
+                {/*</Anime>*/}
+
+                {/*<Anime opacity={'1'} duration={9000} loop={false} delay={100 + (Math.random() * (300-100))}>*/}
+                    {/*<div className="hex">*/}
+                        {/*<div className={'hex-img'}>Hex Grid</div>*/}
+                    {/*</div>*/}
+                {/*</Anime>*/}
+
+                {/*<Anime opacity={'1'} duration={9000} loop={false} delay={100 + (Math.random() * (300-100))}>*/}
+                    {/*<div className="hex">*/}
+                        {/*<div className={'hex-img'}>Hex Grid</div>*/}
+                    {/*</div>*/}
+                {/*</Anime>*/}
+
+                {/*<Anime opacity={'1'} duration={9000} loop={false} delay={100 + (Math.random() * (300-100))}>*/}
+                    {/*<div className="hex">*/}
+                        {/*<div className={'hex-img'}>Hex Grid</div>*/}
+                    {/*</div>*/}
+                {/*</Anime>*/}
+
             {/*</div>*/}
-            <Grid fluid>
-                <ScrollAnimation animateIn="fadeIn">
-                    <Row className={classes.projectsRow}>
-                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
-                            <img className={classes.projectsImg} src='http://via.placeholder.com/240x300' />
-                        </Col>
-                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
-                            <Card className={classes.card}>
-                                <CardMedia
-                                    className={classes.media}
-                                    image="http://via.placeholder.com/240x300"
-                                    title="Contemplative Reptile"
-                                />
-                                <CardContent className='card-desc'>
-                                    {/*<Typography className={classes.title} color="textSecondary">*/}
-                                    {/*Word of the Day*/}
-                                    {/*</Typography>*/}
-                                    <Row className={classes.projectsRow}>
-                                        <Col className={classes.cardDesc} xs={12} sm={9}>
-                                            <Typography style={{color: 'white'}} variant="headline" component="h2">
-                                                Project title
-                                            </Typography>
-                                        </Col>
-                                        <Col className={classes.cardDesc} xs={12} sm={3}>
-
-                                            <Button size="small">Learn More</Button>
-
-                                        </Col>
-                                    </Row>
-                                    <Typography className={classes.pos} color="textSecondary">
-                                        adjective
-                                    </Typography>
-                                    {/*<Typography component="p">*/}
-                                    {/*well meaning and kindly.<br />*/}
-                                    {/*{'"a benevolent smile"'}*/}
-                                    {/*</Typography>*/}
-
-                                </CardContent>
-                            </Card>
-                        </Col>
-                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
-                            <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
-                        </Col>
-                    </Row>
-                </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeIn">
-                    <Row className={classes.projectsRow}>
-                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
-                            <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
-                        </Col>
-                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
-                            <Card className={classes.card}>
-                                <div className='shine'></div>
-                                <CardMedia
-                                    className={classes.media}
-                                    image="http://via.placeholder.com/350x550"
-                                    title="Contemplative Reptile"
-                                />
-                                <CardContent className='card-desc'>
-                                    {/*<Typography className={classes.title} color="textSecondary">*/}
-                                    {/*Word of the Day*/}
-                                    {/*</Typography>*/}
-                                    <Row className={classes.projectsRow}>
-                                        <Col className={classes.cardDesc} xs={12} sm={9}>
-                                            <Typography style={{color: 'white'}} variant="headline" component="h2">
-                                                Project title
-                                            </Typography>
-                                        </Col>
-                                        <Col className={classes.cardDesc} xs={12} sm={3}>
-
-                                            <Button size="small">Learn More</Button>
-
-                                        </Col>
-                                    </Row>
-                                    <Typography className={classes.pos} color="textSecondary">
-                                        adjective
-                                    </Typography>
-                                    {/*<Typography component="p">*/}
-                                    {/*well meaning and kindly.<br />*/}
-                                    {/*{'"a benevolent smile"'}*/}
-                                    {/*</Typography>*/}
-
-                                </CardContent>
-                            </Card>
-                        </Col>
-                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
-                            <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
-                        </Col>
-                    </Row>
-                </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeIn">
-                    <Row className={classes.projectsRow}>
-                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
-                            <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
-                        </Col>
-                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
-                            <Card className={classes.card}>
-                                <CardMedia
-                                    className={classes.media}
-                                    image="http://via.placeholder.com/350x450"
-                                    title="Contemplative Reptile"
-                                />
-                                <CardContent className='card-desc'>
-                                    {/*<Typography className={classes.title} color="textSecondary">*/}
-                                    {/*Word of the Day*/}
-                                    {/*</Typography>*/}
-                                    <Row className={classes.projectsRow}>
-                                        <Col className={classes.cardDesc} xs={12} sm={9}>
-                                            <Typography style={{color: 'white'}} variant="headline" component="h2">
-                                                Project title
-                                            </Typography>
-                                        </Col>
-                                        <Col className={classes.cardDesc} xs={12} sm={3}>
-
-                                            <Button size="small">Learn More</Button>
-
-                                        </Col>
-                                    </Row>
-                                    <Typography className={classes.pos} color="textSecondary">
-                                        adjective
-                                    </Typography>
-                                    {/*<Typography component="p">*/}
-                                    {/*well meaning and kindly.<br />*/}
-                                    {/*{'"a benevolent smile"'}*/}
-                                    {/*</Typography>*/}
-
-                                </CardContent>
-                            </Card>
-                        </Col>
-                        <Col className={classes.projectsItem+' '+'hex-item'} xs={12} sm={6} md={6} lg={4}>
-                            <img className={classes.projectsImg} src='http://via.placeholder.com/650x450' />
-                        </Col>
-                    </Row>
-                </ScrollAnimation>
-                <Row>
-                    <Col xs={12}>
-                        <Row start="xs">
-                            <Col xs={6} />
-                        </Row>
-                    </Col>
-                </Row>
-            </Grid>
-            {/*<GridList cellHeight={360} className={classes.gridList} cols={4}>*/}
-                {/*{tileData.map(tile => (*/}
-                    {/*<GridListTile key={tile.img} cols={tile.cols || 1}>*/}
-                        {/*<img src={tile.img} alt={tile.title} />*/}
-                        {/*<GridListTileBar*/}
-                            {/*title={tile.title}*/}
-                            {/*subtitle={<span>{tile.author}</span>}*/}
-                        {/*/>*/}
-                    {/*</GridListTile>*/}
-                {/*))}*/}
-            {/*</GridList>*/}
         </div>
     );
 }
