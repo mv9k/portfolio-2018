@@ -129,6 +129,7 @@ function LandingPage(props) {
 
                                             Process:
                                             Feel free to contact me for freelance project.
+                                            I code both for work and as a hobby. My main interests are:
                                             I like to resolve design problems, create smart user interface and imagine useful interaction.
                                             I enjoy building web & mobile applications people love to use.
                                             I build apps and Websites.

@@ -92,9 +92,10 @@ function Projects(props) {
             <video autoPlay loop muted className={'project-video'}>
                 <source
                     src={akoWahiVid}
-                    type="video/mp4"></source>
+                    type="video/mp4">
+                </source>
             </video>
-            <PixiComponent/>
+            {/*<PixiComponent/>*/}
             <h3 className={'project-title'}>{Data[1].title}</h3>
             {/*<div className="hex-container">*/}
 

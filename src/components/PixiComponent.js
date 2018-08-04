@@ -112,7 +112,7 @@ export default class PixiComponent extends React.Component {
 
     resize = () => {
         // console.log('works: ', document.body.clientHeight);
-        window.location.reload();
+        // window.location.reload();
     };
 
     render() {
