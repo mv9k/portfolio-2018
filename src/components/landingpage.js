@@ -38,13 +38,13 @@ function LandingPage(props) {
     const { classes } = props;
 
     return(
-        <div>
+        <div className={'landingpage-container'}>
             <video autoPlay loop className="video-background" muted>
                 <source
                     src={BGvideo}
                     type="video/mp4"></source>
             </video>
-            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <ScrollAnimation animateIn="fadeIn">
                 <div className={'angle-div'}></div>
                 <Tilt className={classes.customTilt + ' ' + 'Tilt'} options={{
                     max: 11,

@@ -58,8 +58,10 @@ div[class*=' MuiInput-underline']:after {
 }
 
 .contact-container {
-    display: flex;
+    justify-content: center;
     height: 100vh;
+    display: flex;
+    /*height: 100vh;*/
     flex-direction: column;
     flex-grow: 1;
 }

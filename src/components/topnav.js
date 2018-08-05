@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -10,7 +10,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { NavLink } from 'react-router-dom';
 import './topnav.css'
 
-const styles = {
+const classes = {
     root: {
         flexGrow: 1,
         zIndex: 1000,
@@ -42,10 +42,29 @@ const styles = {
     }
 };
 
-function TopNav(props) {
-    const { classes } = props;
+class TopNav extends Component {
+
+    constructor(props) {
+        super(props);
+        let { topNavParallax } = 'red';
+    }
+
+    handleScroll = () => {
+        console.log(window.pageYOffset);
+        if(window.pageYOffset > 5) {
+            console.log('works');
+            this.topNavParallax = 'blue';
+        }
+    };
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    render() {
+
     return (
-        <div className={classes.root + ' ' + 'top-nav'}>
+        <div className={classes.root + ' ' + 'top-nav'} style={{background: this.topNavParallax}}>
             <AppBar className={classes.bar} position="static">
                 <Toolbar className={classes.toolBar}>
                     {/*<IconButton className={classes.menuButton} color="inherit" aria-label="Menu">*/}
@@ -110,10 +129,11 @@ function TopNav(props) {
             </AppBar>
         </div>
     );
+    }
 }
 
 TopNav.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(TopNav);
+export default withStyles(classes)(TopNav);

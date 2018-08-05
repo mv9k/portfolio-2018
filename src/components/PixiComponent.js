@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import * as PIXI from '../../node_modules/pixi.js';
 import Data from './projects-data/projectData';
 
-import background from '../media/hidden+path+2.jpg';
+import background from '../media/4k-wallpaper-action-adventure-312105.jpg';
 
 export default class PixiComponent extends React.Component {
     constructor(props) {

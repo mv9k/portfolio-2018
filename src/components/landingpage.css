@@ -9,6 +9,14 @@
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565761', endColorstr='#212329',GradientType=0 ); !* ie6-9 *!*/
 }
 
+.landingpage-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
 .portrait {
     margin-bottom: 3em;
     /*width: 240px;*/

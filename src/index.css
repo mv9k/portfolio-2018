@@ -1,5 +1,6 @@
 .main-container {
-  top: 70.27px;
+  flex-grow: 1;
+  /*top: 70.27px;*/
   position: relative;
 }
 
@@ -21,7 +22,8 @@
 
 body {
   background: black;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -32,8 +34,11 @@ body {
 }
 
 div.containment {
+  display: flex;
+  /*overflow-y: auto;*/
+  /*overflow-x: hidden;*/
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /*background: url('./media/hidden+path+3.jpg') no-repeat center center fixed !important;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -43,7 +48,7 @@ div.containment {
   /*transition: all 1s ease-in-out;*/
 }
 
-div.containment.aboutme-bg, div.containment.landing-bg, div.containment.projects-bg, div.containment.resume-bg, div.containment.contact-bg {
+div.containment.aboutme-bg, div.containment.landing-bg, div.containment.resume-bg, div.containment.contact-bg {
   background: black;
   /*background: #f1f1f1;  !* fallback for old browsers *!*/
   /*background: -webkit-linear-gradient(7deg, #c3b5a2, #dcdcdc);  !* Chrome 10-25, Safari 5.1-6 *!*/
@@ -56,6 +61,10 @@ div.containment.aboutme-bg, div.containment.landing-bg, div.containment.projects
   background: -ms-linear-gradient(123deg, rgba(33,35,41,1) 0%, rgba(86,87,97,1) 99%, rgba(86,87,97,1) 100%); /* ie10+ */
   background: linear-gradient(327deg, rgba(33,35,41,1) 0%, rgba(86,87,97,1) 99%, rgba(86,87,97,1) 100%); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565761', endColorstr='#212329',GradientType=0 ); /* ie6-9 */
+}
+
+div.containment.projects-bg {
+  background: black;
 }
 
 .landing-paper-bg {
@@ -143,6 +152,10 @@ div.containment.aboutme-bg, div.containment.landing-bg, div.containment.projects
   display: none !important;
 }
 
+button[class*="MuiButton-disabled"] {
+  opacity: 0.5;
+}
+
 .Tilt {
   height: calc(100% - 70px);
 }
@@ -159,7 +172,7 @@ div.containment.aboutme-bg, div.containment.landing-bg, div.containment.projects
 @media only screen and (max-width: 767px) {
 
   .custom-tilt, *[class^="LandingPage-customTilt"] {
-    padding: 6px !important;
+    padding: 1em !important;
   }
 
   .login-left-col {

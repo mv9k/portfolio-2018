@@ -1,14 +1,39 @@
-import aw1 from '../../media/hidden+path+2.jpg';
+import akowahiVid from './media/akowahi.mp4';
 
 const Data =
-  {
-      1: {
+  [
+      {
+          id: 0,
           title: "AkoWahi",
           desc: "Site built for bla bla bla",
           tags: "wordpress",
           link: "www.akowahi.com",
-          img1: aw1,
-      }
-  };
+          vid: akowahiVid,
+      },
+      {
+          id: 1,
+          title: "AkoWahi",
+          desc: "Site built for bla bla bla",
+          tags: "wordpress",
+          link: "www.akowahi.com",
+          vid: akowahiVid,
+      },
+      {
+          id: 2,
+          title: "AkoWahi",
+          desc: "Site built for bla bla bla",
+          tags: "wordpress",
+          link: "www.akowahi.com",
+          vid: akowahiVid,
+      },
+      {
+          id: 3,
+          title: "AkoWahi",
+          desc: "Site built for bla bla bla",
+          tags: "wordpress",
+          link: "www.akowahi.com",
+          vid: akowahiVid,
+      },
+  ];
 
 export default Data;
