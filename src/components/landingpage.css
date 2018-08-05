@@ -49,7 +49,7 @@
 }
 
 .bio-title {
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.2em;
     font-weight: lighter;
     letter-spacing: .12em;
@@ -180,7 +180,7 @@
     height: 100vh;
     position: fixed;
     transform: skewX(-45deg);
-    z-index: -100;
+    /*z-index: -100;*/
 }
 
 .underline {

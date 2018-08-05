@@ -15,6 +15,7 @@ const classes = {
         flexGrow: 1,
         zIndex: 1000,
         position: 'fixed',
+        transition: 'background .5s',
     },
     bar: {
         textAlign: 'center',
@@ -46,34 +47,48 @@ class TopNav extends Component {
 
     constructor(props) {
         super(props);
-        let { topNavParallax } = 'red';
+        this.state = {
+            topNavParallax: {
+                background: 'none'
+            },
+        };
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
     }
 
     handleScroll = () => {
         console.log(window.pageYOffset);
         if(window.pageYOffset > 5) {
             console.log('works');
-            this.topNavParallax = 'blue';
+            this.setState({
+                topNavParallax: {
+                    background: 'black'
+                }
+            });
+        } else {
+            this.setState({
+                topNavParallax: {
+                    background: 'none'
+                }
+            });
         }
     };
-
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-    }
 
     render() {
 
     return (
-        <div className={classes.root + ' ' + 'top-nav'} style={{background: this.topNavParallax}}>
-            <AppBar className={classes.bar} position="static">
-                <Toolbar className={classes.toolBar}>
+        <div className={this.props.classes.root + ' ' + 'top-nav'} style={this.state.topNavParallax}>
+            <AppBar className={this.props.classes.bar} position="static">
+                <Toolbar className={this.props.classes.toolBar}>
                     {/*<IconButton className={classes.menuButton} color="inherit" aria-label="Menu">*/}
                         {/*<MenuIcon />*/}
                     {/*</IconButton>*/}
                     {/*<Typography variant="title" color="inherit" className='name'>*/}
                         {/*Kristopher Wheeler*/}
                     {/*</Typography>*/}
-                    <div className={classes.navLinks + ' ' + 'main-nav'}>
+                    <div className={this.props.classes.navLinks + ' ' + 'main-nav'}>
                         <Button color="inherit" className={'nav-button'}>
                             <NavLink activeClassName='active-nav' to="/" exact={true}>
                                 <div className='link-line-a'></div>
