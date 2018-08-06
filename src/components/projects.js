@@ -37,7 +37,6 @@ import Plx from 'react-plx';
 const classes = {
     root: {
         width: 'auto',
-        height: '100vh !important',
         padding: '1em',
     },
     projectCard: {
@@ -52,52 +51,49 @@ export default class Projects extends Component {
     }
 
     projectList = Data.map((project) =>
-
-
-            <Col key={project.id} md={12} className={'project-col'}>
+            <Col key={project.id} xs={12} md={4} className={'project-col'}>
                 <Paper id={project.index} className={classes.projectCard + ' ' + 'project-paper'} elevation={22}>
                     <Grid className={'no-pad' + ' ' + 'projects-container'}>
                         <Row middle={'xs'}>
-                            <Col xs={12} md={7} className={'project-img-col'}>
-                                <video autoPlay loop muted className={'project-video'}>
-                                    <source
-                                        src={project.vid}
-                                        type="video/mp4">
-                                    </source>
-                                </video>
+                            <Col xs={12} className={'project-img-col'}>
+                                <figure>
+                                    <video autoPlay loop muted className={'project-video'}>
+                                        <source
+                                            src={project.vid}
+                                            type="video/mp4">
+                                        </source>
+                                    </video>
+                                </figure>
                             </Col>
-                            <Col xs={12} md={5} className={'project-desc-col'}>
-                                <Plx
-                                    className={'project-'+project.id}
-                                    parallaxData={[{
-                                        start: 'self',
-                                        duration: 100,
-                                        properties:
-                                            [
-                                                // {
-                                                //     startValue: 0,
-                                                //     endValue: 1,
-                                                //     property: "opacity"
-                                                // },
-                                                {
-                                                    startValue: 0,
-                                                    endValue: 1,
-                                                    property: 'opacity'
-                                                }
-                                            ]
-                                    }]}
-                                >
+                            <Col xs={12} className={'project-desc-col'}>
+                                {/*<Plx*/}
+                                    {/*className={'project-'+project.id}*/}
+                                    {/*parallaxData={[{*/}
+                                        {/*start: 'self',*/}
+                                        {/*end: 'ender-'+project.id,*/}
+                                        {/*properties:*/}
+                                            {/*[*/}
+                                                {/*// {*/}
+                                                {/*//     startValue: 0,*/}
+                                                {/*//     endValue: 1,*/}
+                                                {/*//     property: "opacity"*/}
+                                                {/*// },*/}
+                                                {/*{*/}
+                                                    {/*startValue: 0,*/}
+                                                    {/*endValue: 1,*/}
+                                                    {/*property: 'opacity'*/}
+                                                {/*}*/}
+                                            {/*]*/}
+                                    {/*}]}*/}
+                                {/*>*/}
                                     <h3 className={'project-title'}>{project.title}</h3>
                                     <p>{project.desc}</p>
-                                </Plx>
+                                {/*</Plx>*/}
                             </Col>
                         </Row>
                     </Grid>
                 </Paper>
             </Col>
-
-
-
     );
 
     render() {
@@ -106,7 +102,7 @@ export default class Projects extends Component {
             <div style={classes.root}>
                 <Grid className={'no-pad' + ' ' + 'projects-container'} style={{height:'1000px'}}>
                     {/*<div style={{height:'1000px',overflow:'scroll'}}>*/}
-                    <Row middle={'xs'} style={{background: 'green !important'}}>
+                    <Row middle={'xs'}>
                         {this.projectList}
                     </Row>
                 </Grid>

@@ -10,10 +10,11 @@
 }
 
 .landingpage-container {
+    overflow: hidden;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
 }
 
@@ -39,13 +40,6 @@
     /*-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 0);*/
     /*clip-path: polygon(50% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 0);*/
     /*filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.2));*/
-}
-
-.bio-text {
-    color: #e5e5e5 !important;
-    font-size: 1.1em !important;
-    font-weight: lighter !important;
-    padding: 1em 0;
 }
 
 .bio-title {

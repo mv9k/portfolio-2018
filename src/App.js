@@ -8,12 +8,14 @@ import TopNav from './components/topnav';
 class App extends Component {
 
   componentDidMount() {
-      console.log(' ____  __.      .__          __      __ \n' +
+      console.log('\n'+
+          ' ____  __.      .__          __      __ \n' +
           '|    |/ _|______|__| ______ /  \\    /  \\\n' +
           '|      < \\_  __ \\  |/  ___/ \\   \\/\\/   /\n' +
           '|    |  \\ |  | \\/  |\\___ \\   \\        / \n' +
           '|____|__ \\|__|  |__/____  >   \\__/\\  /  \n' +
-          '        \\/              \\/         \\/   ');
+          '        \\/              \\/         \\/   '
+      );
   }
 
   render() {

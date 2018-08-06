@@ -2,6 +2,14 @@
   flex-grow: 1;
   /*top: 70.27px;*/
   position: relative;
+  padding-top: 70px;
+}
+
+.bio-text {
+  color: #e5e5e5 !important;
+  font-size: 1.1em !important;
+  font-weight: lighter !important;
+  padding: 1em 0;
 }
 
 .no-pad {
@@ -64,7 +72,7 @@ div.containment.aboutme-bg, div.containment.landing-bg, div.containment.resume-b
 }
 
 div.containment.projects-bg {
-  background: black;
+  background: #e2e2e2;
 }
 
 .landing-paper-bg {
@@ -72,7 +80,7 @@ div.containment.projects-bg {
   flex-direction: column;
   padding: 3em;
   background-color: #000000ab !important;
-  height: 62vh;
+  /*height: 62vh;*/
   max-width: 1000px !important;
   /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(45, 46, 56, 0)), color-stop(100%, rgba(26, 28, 34, 1)));*/
   /*background: -webkit-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(47, 48, 58, 0) 100%);*/
@@ -209,7 +217,7 @@ button[class*="MuiButton-disabled"] {
   }
 
   .bio-text {
-    font-size: 4.5vw !important;
+    font-size: .84em !important;
   }
 
   .social-grid, .bio-col {
