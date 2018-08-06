@@ -45,7 +45,7 @@
 .project-paper::before {
     position: absolute;
     top: 0;
-    left: -80%;
+    left: -100%;
     z-index: 2;
     display: block;
     content: '';
@@ -53,9 +53,9 @@
     height: 100%;
     background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
     background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-    -webkit-transform: skewX(-25deg);
-    transform: skewX(-25deg);
-    opacity: .4;
+    -webkit-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+    opacity: 0;
 }
 
 .project-col {
@@ -69,8 +69,8 @@
 }
 
 .project-paper:hover::before {
-    -webkit-animation: shine .75s;
-    animation: shine .75s;
+    -webkit-animation: shine .75s ease-in forwards;
+    animation: shine .75s ease-in forwards;
 }
 
 .project-col:hover .project-img-col * {
@@ -92,11 +92,17 @@
 }
 
 @-webkit-keyframes shine {
+    0% {
+        opacity: .8;
+    }
     100% {
         left: 125%;
     }
 }
 @keyframes shine {
+    0% {
+        opacity: .8;
+    }
     100% {
         left: 125%;
     }

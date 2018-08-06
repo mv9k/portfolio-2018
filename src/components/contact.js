@@ -129,14 +129,14 @@ class Contact extends Component {
                                                 {/*</Typography>*/}
                                             </ScrollAnimation>
                                         </Col>
-                                        <Col className={'login-right-col'} xs={12} sm={6}>
-                                            <ScrollAnimation animateIn="fadeIn" delay={300}>
+                                        <Col className={'contact-right-col'} xs={12} sm={6}>
+                                            {/*<ScrollAnimation animateIn="fadeIn" delay={300}>*/}
                                                 <Fade
                                                     images={images}
                                                     duration={6000}
                                                     transitionDuration={1000}
                                                 />
-                                            </ScrollAnimation>
+                                            {/*</ScrollAnimation>*/}
                                         </Col>
                                     </Row>
                                 </Grid>

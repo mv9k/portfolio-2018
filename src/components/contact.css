@@ -57,6 +57,27 @@ div[class*=' MuiInput-underline']:after {
     min-width: 100%;
 }
 
+.contact-right-col {
+    opacity: 0;
+    -webkit-animation: reveal .75s ease-in forwards;
+    animation: reveal .75s ease-in forwards;
+    -moz-animation-delay: .75s;
+    -webkit-animation-delay: .75s;
+    -o-animation-delay: .75s;
+    animation-delay: .75s;
+}
+
+@-webkit-keyframes reveal {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes reveal {
+    100% {
+        opacity: 1;
+    }
+}
+
 .contact-container {
     display: flex;
     flex-grow: 1;

@@ -53,12 +53,12 @@ export default class Projects extends Component {
     }
 
     projectList = Data.map((project) =>
-            <Col key={project.id} xs={12} sm={12} md={4} className={'project-col'}>
+            <Col key={project.id} xs={12} sm={12} md={3} className={'project-col'}>
                 <Paper id={project.index} className={classes.projectCard + ' ' + 'project-paper'} elevation={22}>
                     <Grid className={'no-pad' + ' ' + 'projects-container'}>
                         <Row middle={'xs'}>
                             <Col xs={12} className={'project-img-col'}>
-                                <figure style={{minWidth:300,minHeight:225,background:'black'}}>
+                                <figure style={{minWidth:'100%',minHeight:'100%',background:'black'}}>
                                     <video autoPlay loop muted className={'project-video'}>
                                         <source
                                             src={project.vid}

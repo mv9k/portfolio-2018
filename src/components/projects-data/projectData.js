@@ -4,8 +4,8 @@ const Data =
   [
       {
           id: 0,
-          title: "AkoWahi",
-          desc: "Site built for bla bla bla",
+          title: "AkoWahi.com",
+          desc: "// Wordpress // Custom plugin and theming",
           tags: "wordpress",
           link: "www.akowahi.com",
           vid: akowahiVid,

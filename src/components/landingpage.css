@@ -18,28 +18,85 @@
     justify-content: center;
 }
 
+.landing-paper-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-paper-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+    opacity: .4;
+    -webkit-animation: lshine .75s ease-in forwards;
+    animation: lshine .75s ease-in forwards;
+    -moz-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes lshine {
+    100% {
+        opacity: 0;
+        left: 135%;
+        width: 80%;
+        display: none;
+    }
+}
+@keyframes lshine {
+    100% {
+        opacity: 0;
+        left: 135%;
+        width: 80%;
+        display: none;
+    }
+}
+
 .portrait {
-    margin-bottom: 3em;
+    /*margin-bottom: 3em;*/
     /*width: 240px;*/
     width: 100%;
-    max-width: 250px;
+    max-width: 150px;
     /*height: 300px;*/
     border-radius: 0 !important;
-    /*-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
-    /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
-    /*-webkit-clip-path: polygon(80% 0, 100% 25%, 100% 100%, 19% 100%, 0% 75%, 0 0);*/
-    /*clip-path: polygon(80% 0, 100% 25%, 100% 100%, 19% 100%, 0% 75%, 0 0);*/
-    /*-webkit-mask-image: -webkit-gradient(linear, left 70%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))*/
+}
 
-    /*-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
-    /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
-    /*filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));*/
+.kwlogo-container {
+    margin: 2em auto;
+    max-width: 40%;
+}
 
-    /*-webkit-clip-path: polygon(100% 0, 94% 42%, 66% 63%, 49% 100%, 0 100%, 0 0);*/
-    /*clip-path: polygon(100% 0, 94% 42%, 66% 63%, 49% 100%, 0 100%, 0 0);*/
-    /*-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 0);*/
-    /*clip-path: polygon(50% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 0);*/
-    /*filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.2));*/
+#kwlogo path {
+    stroke-width: .5pt !important;
+    stroke: rgb(239, 239, 239) !important;
+    fill: none !important;
+    stroke-dasharray: 1000;
+    opacity: 0;
+    animation: logoanim 2.5s ease-in-out forwards;
+}
+
+@keyframes logoanim {
+    0% {
+        opacity: 0;
+        /*fill: none;*/
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        opacity: 1;
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+
 }
 
 .bio-title {
@@ -130,8 +187,8 @@
     height: 1px;
     width: 1px;
     position: relative;
-    left: -2.6em;
-    top: -4em;
+    left: -.8em;
+    top: -2em;
 }
 
 .top-left-y {
@@ -170,7 +227,7 @@
 
 .angle-div {
     background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(234, 22, 22, 0)), color-stop(1%, rgba(86, 87, 97, 0)), color-stop(100%, rgba(0,0,0,0.69)));
-    width: 80vw;
+    width: 150vw;
     height: 100vh;
     position: fixed;
     transform: skewX(-45deg);
