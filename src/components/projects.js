@@ -7,6 +7,8 @@ import { withStyles } from '@material-ui/core/styles';
 // import GridListTile from '@material-ui/core/GridListTile';
 // import GridListTileBar from '@material-ui/core/GridListTileBar';
 // import tileData from './tileData';
+import Icon from 'react-icons-kit';
+import {androidOpen, socialOctocat} from 'react-icons-kit/ionicons';
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Anime from 'react-anime';
@@ -51,12 +53,12 @@ export default class Projects extends Component {
     }
 
     projectList = Data.map((project) =>
-            <Col key={project.id} xs={12} md={4} className={'project-col'}>
+            <Col key={project.id} xs={12} sm={12} md={4} className={'project-col'}>
                 <Paper id={project.index} className={classes.projectCard + ' ' + 'project-paper'} elevation={22}>
                     <Grid className={'no-pad' + ' ' + 'projects-container'}>
                         <Row middle={'xs'}>
                             <Col xs={12} className={'project-img-col'}>
-                                <figure>
+                                <figure style={{minWidth:300,minHeight:225,background:'black'}}>
                                     <video autoPlay loop muted className={'project-video'}>
                                         <source
                                             src={project.vid}
@@ -86,8 +88,15 @@ export default class Projects extends Component {
                                             {/*]*/}
                                     {/*}]}*/}
                                 {/*>*/}
-                                    <h3 className={'project-title'}>{project.title}</h3>
-                                    <p>{project.desc}</p>
+                                <Row middle={'xs'}>
+                                    <Col xs={10}>
+                                        <h3 className={'project-title'}>{project.title}</h3>
+                                        <p>{project.desc}</p>
+                                    </Col>
+                                    <Col xs={2} style={{display:'flex',justifyContent:'center'}}>
+                                        <Icon className='project-icon' icon={androidOpen}/>
+                                    </Col>
+                                </Row>
                                 {/*</Plx>*/}
                             </Col>
                         </Row>
@@ -100,7 +109,7 @@ export default class Projects extends Component {
 
         return (
             <div style={classes.root}>
-                <Grid className={'no-pad' + ' ' + 'projects-container'} style={{height:'1000px'}}>
+                <Grid className={'no-pad' + ' ' + 'projects-container'}>
                     {/*<div style={{height:'1000px',overflow:'scroll'}}>*/}
                     <Row middle={'xs'}>
                         {this.projectList}
