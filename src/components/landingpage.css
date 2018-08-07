@@ -155,7 +155,7 @@
     flex-direction: column;
     flex-grow: 1;
     position: relative;
-    padding: 4em;
+    padding: 2em 4em;
     color: rgb(182, 143, 112) !important;
 }
 
