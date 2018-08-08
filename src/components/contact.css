@@ -6,19 +6,6 @@
     padding: 6em;
 }
 
-.contact-root {
-    margin: 0 auto;
-    /*// width: '100vw',*/
-/*...theme.mixins.gutters(),*/
-/*// paddingTop: theme.spacing.unit * 2,*/
-/*// paddingBottom: theme.spacing.unit * 2,*/
-    border-radius: 0;
-    /*// margin: '10vh 20vw',*/
-    min-width: 50vw;
-    max-width: 80vw;
-    /*padding: '.6em !important',*/
-}
-
 .contact-form {
     text-align: center;
 }
@@ -35,8 +22,6 @@ div[class*=' MuiInput-underline']:after {
 .contact-field {
     border: 1px solid rgb(241,230,209) !important;
     margin: 1.3em 0;
-    /*-webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);*/
-    /*clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);*/
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(38,40,48,0)), color-stop(55%, rgba(38,40,48,0.55)), color-stop(100%, rgba(38,40,48,1)));
     background: -webkit-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%);
     background: -o-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%);
@@ -53,8 +38,27 @@ div[class*=' MuiInput-underline']:after {
     left: .5em;
 }
 
+.contact-paper {
+    border-radius: 0;
+    min-width: 50vw;
+    max-width: 1000px;
+    height: 60vh;
+    background-color: #000000e3 !important;
+    position: relative;
+    overflow: hidden;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F303A', endColorstr='#1A1C22', GradientType=0);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0,0,0,0.26)), color-stop(100%, rgba(26, 28, 34, 1)));
+    background: -webkit-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%);
+    background: -o-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%);
+    background: linear-gradient(327deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%);
+}
+
 .login-form-container {
     min-width: 100%;
+}
+
+.contact-left-col {
+    padding: 2em;
 }
 
 .contact-right-col {

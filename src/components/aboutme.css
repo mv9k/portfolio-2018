@@ -33,12 +33,8 @@
     position: relative;
 }
 
-.full-height, .full-height div:not(.login-left-col) {
+.full-height, .full-height div:not(.contact-left-col) {
     height: 100% !important;
-}
-
-.login-left-col {
-    padding-left: 6em;
 }
 
 .images-wrap div img {
@@ -101,20 +97,16 @@
 }
 
 .login-paper {
-    border-radius: 0 !important;
+    /*padding: 2em 0;*/
     background-color: #000000e3 !important;
-    height: 66vh;
-    max-width: 1000px !important;
+    max-width: 800px !important;
     position: relative;
     overflow: hidden;
-    padding: 0 !important;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F303A', endColorstr='#1A1C22', GradientType=0);
-    background: -moz-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0,0,0,0.26)), color-stop(100%, rgba(26, 28, 34, 1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* ie10+ */
-    background: linear-gradient(327deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* w3c */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0,0,0,0.26)), color-stop(100%, rgba(26, 28, 34, 1)));
+    background: -webkit-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%);
+    background: -o-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%);
+    background: linear-gradient(327deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%);
 }
 
 .login-right-col {

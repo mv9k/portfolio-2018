@@ -66,11 +66,11 @@ class Contact extends Component {
                         scale: 1,
                         perspective: 1800,
                     }}>
-                        <Paper className={'contact-root' + ' ' + 'login-paper'} elevation={22}>
+                        <Paper className={'contact-paper'} elevation={22}>
                             <div className='Tilt-inner full-height'>
                                 <Grid className={'no-pad'}>
-                                    <Row middle={'xs'}>
-                                        <Col className={'login-left-col'} xs={12} sm={6}>
+                                    <Row className={'no-pad'} middle={'xs'}>
+                                        <Col className={'contact-left-col'} xs={12} sm={5}>
                                             <ScrollAnimation animateIn="fadeIn" delay={300}>
                                                 {/*<Paper className='portrait' elevation={22}>*/}
                                                 {/*<div className='Tilt-inner'>*/}
@@ -129,7 +129,7 @@ class Contact extends Component {
                                                 {/*</Typography>*/}
                                             </ScrollAnimation>
                                         </Col>
-                                        <Col className={'contact-right-col'} xs={12} sm={6}>
+                                        <Col className={'contact-right-col'} xs={12} sm={7}>
                                             {/*<ScrollAnimation animateIn="fadeIn" delay={300}>*/}
                                                 <Fade
                                                     images={images}

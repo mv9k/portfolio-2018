@@ -14,13 +14,18 @@
     /*-webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);*/
 }
 
+.project-grid {
+    padding: 0;
+}
+
 .projects-container {
-    width: 100%;
+    width: 80%;
+    height: 100%;
 }
 
 .project-paper {
     margin: 0 auto;
-    border-radius: 0 !important;
+    /*border-radius: 0 !important;*/
     background-color: rgba(0, 0, 0, .5) !important;
     /*max-width: 1000px !important;*/
     width: 100%;
@@ -28,18 +33,29 @@
     overflow: hidden;
     padding: 0 !important;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F303A', endColorstr='#1A1C22', GradientType=0);
-    background: -moz-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0,0,0,0.26)), color-stop(100%, rgba(26, 28, 34, 1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* ie10+ */
-    background: linear-gradient(327deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* w3c */
+    background: -moz-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgb(40, 41, 51) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgb(40, 41, 51)), color-stop(100%, rgba(26, 28, 34, 1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgb(40, 41, 51) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgb(40, 41, 51) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgb(40, 41, 51) 100%); /* ie10+ */
+    background: linear-gradient(327deg, rgba(26, 28, 34, 1) 0%, rgb(40, 41, 51) 100%); /* w3c */
     /*background: none !important;*/
 
 }
 
 .project-img-col figure {
     margin: 0;
+}
+
+.project-img-col figure:after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    -moz-box-shadow: inset 0px 0px 26px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 26px 0px rgba(0,0,0,0.75);
 }
 
 .project-paper::before {
@@ -74,8 +90,8 @@
 }
 
 .project-col:hover .project-img-col * {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .project-img-col * {
@@ -117,7 +133,16 @@
 .project-desc-col {
     /*position: relative;*/
     color: white;
-    padding: 6px 2em;
+    padding: 2em;
+}
+
+.project-desc-col * {
+    padding: 0;
+    margin: 0;
+}
+
+.project-title-col {
+    padding: .5em 2em;
 }
 
 .project-title {

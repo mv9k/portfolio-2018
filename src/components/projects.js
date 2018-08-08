@@ -38,12 +38,15 @@ import Plx from 'react-plx';
 
 const classes = {
     root: {
-        width: 'auto',
+        width: '80%',
         padding: '1em',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-    projectCard: {
-        height: '25vh',
-    }
+    // projectCard: {
+    //     height: '25vh',
+    // }
 };
 
 export default class Projects extends Component {
@@ -53,10 +56,17 @@ export default class Projects extends Component {
     }
 
     projectList = Data.map((project) =>
-            <Col key={project.id} xs={12} sm={12} md={3} className={'project-col'}>
+            <Col key={project.id} xs={12} sm={6} md={4} className={'project-col'}>
                 <Paper id={project.index} className={classes.projectCard + ' ' + 'project-paper'} elevation={22}>
-                    <Grid className={'no-pad' + ' ' + 'projects-container'}>
+                    <Grid className={'project-grid'}>
                         <Row middle={'xs'}>
+                            <Col xs={12} className={'project-title-col'}>
+                                <Row middle={'xs'}>
+                                    <Col xs={10}>
+                                        <h3 className={'project-title'}>{project.title}</h3>
+                                    </Col>
+                                </Row>
+                            </Col>
                             <Col xs={12} className={'project-img-col'}>
                                 <figure style={{minWidth:'100%',minHeight:'100%',background:'black'}}>
                                     <video autoPlay loop muted className={'project-video'}>
@@ -89,11 +99,13 @@ export default class Projects extends Component {
                                     {/*}]}*/}
                                 {/*>*/}
                                 <Row middle={'xs'}>
-                                    <Col xs={10}>
-                                        <h3 className={'project-title'}>{project.title}</h3>
+                                    <Col xs={8}>
                                         <p>{project.desc}</p>
                                     </Col>
-                                    <Col xs={2} style={{display:'flex',justifyContent:'center'}}>
+                                    <Col xs={2} style={{display:'flex',justifyContent:'flex-end'}}>
+                                        <Icon className='project-icon' icon={socialOctocat}/>
+                                    </Col>
+                                    <Col xs={2} style={{display:'flex',justifyContent:'flex-end'}}>
                                         <Icon className='project-icon' icon={androidOpen}/>
                                     </Col>
                                 </Row>

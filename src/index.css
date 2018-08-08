@@ -1,3 +1,7 @@
+* {
+  font-weight: lighter !important;
+}
+
 #root {
   display: flex;
   flex-grow: 1;
@@ -8,6 +12,8 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /*top: 70.27px;*/
   position: relative;
   padding-top: 70px;
@@ -91,32 +97,18 @@ div.containment.aboutme-bg, div.containment.landing-bg, div.containment.projects
 }
 
 /*div.containment.projects-bg {*/
-  /*background: #e2e2e2;*/
+  /*background: -moz-linear-gradient(123deg, rgba(33,35,41,1) 0%, rgb(208, 211, 227) 99%, rgb(239, 239, 239) 100%); !* ff3.6+ *!*/
+  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgb(239, 239, 239)), color-stop(1%, rgb(208, 211, 227)), color-stop(100%, rgba(33,35,41,1))); !* safari4+,chrome *!*/
+  /*background: -webkit-linear-gradient(123deg, rgba(33,35,41,1) 0%, rgb(208, 211, 227) 99%, rgb(239, 239, 239) 100%); !* safari5.1+,chrome10+ *!*/
+  /*background: -o-linear-gradient(123deg, rgba(33,35,41,1) 0%, rgb(208, 211, 227) 99%, rgb(239, 239, 239) 100%); !* opera 11.10+ *!*/
+  /*background: -ms-linear-gradient(123deg, rgba(33,35,41,1) 0%, rgb(208, 211, 227) 99%, rgb(239, 239, 239) 100%); !* ie10+ *!*/
+  /*background: linear-gradient(327deg, rgba(33,35,41,1) 0%, rgb(208, 211, 227) 99%, rgb(239, 239, 239) 100%); !* w3c *!*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565761', endColorstr='#212329',GradientType=0 ); !* ie6-9 *!*/
 /*}*/
 
-.landing-paper-bg {
-  display: flex;
-  flex-direction: column;
-  padding: 3em;
-  background-color: #000000ab !important;
-  /*height: 62vh;*/
-  max-width: 1000px !important;
-  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(45, 46, 56, 0)), color-stop(100%, rgba(26, 28, 34, 1)));*/
-  /*background: -webkit-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(47, 48, 58, 0) 100%);*/
-  /*background: -o-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(47, 48, 58, 1) 100%);*/
-  /*background: linear-gradient(327deg, rgba(26, 28, 34, 1) 0%, rgba(47, 48, 58, 0) 100%);*/
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F303A', endColorstr='#1A1C22', GradientType=0);
-  /*height: 66vh;*/
-  background: -moz-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0,0,0,0.26)), color-stop(100%, rgba(26, 28, 34, 1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(123deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* ie10+ */
-  background: linear-gradient(327deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%); /* w3c */
-  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F303A', endColorstr='#1A1C22', GradientType=0); !* ie6-9 *!*/
-  /*-webkit-clip-path: polygon(0% 100%, 92% 100%, 100% 86%, 100% 90%, 94% 100%, 100% 100%, 100% 0%, 0% 0%);*/
-  /*clip-path: polygon(0% 100%, 92% 100%, 100% 86%, 100% 90%, 94% 100%, 100% 100%, 100% 0%, 0% 0%);*/
-}
+/*div.containment.projects-bg {*/
+  /*background: #e2e2e2;*/
+/*}*/
 
 .landing-paper-border {
   max-width: 56vw !important;
@@ -191,6 +183,10 @@ button[class*="MuiButton-disabled"] {
   display: flex;
 }
 
+.bio-col {
+  padding: 0 2.5em !important;
+}
+
 /* Mobile media queries */
 @media only screen and (max-width: 374px) {
   .nav-button {
@@ -199,7 +195,13 @@ button[class*="MuiButton-disabled"] {
   .bio-text {
     padding: 6px 0 !important;
   }
+  .bio-col {
+    padding: 0 !important;
+  }
   .contact-root {
+    max-width: 90vw !important;
+  }
+  .landing-paper-bg {
     max-width: 90vw !important;
   }
 }
@@ -209,11 +211,11 @@ button[class*="MuiButton-disabled"] {
     padding: 1em !important;
   }
 
-  .login-left-col {
+  .contact-left-col {
     padding: 2em !important;
   }
 
-  .login-right-col,
+  .contact-right-col,
   .top-left-corner,
   .vertical-divider,
   .portrait-col,
@@ -251,7 +253,7 @@ button[class*="MuiButton-disabled"] {
     margin: 0 !important;
   }
 
-  .landing-paper-bg, .login-paper {
+  .landing-paper-bg, .contact-paper {
     height: 95% !important;
   }
 
@@ -274,9 +276,6 @@ button[class*="MuiButton-disabled"] {
 @media only screen
 and (min-width: 768px)
 and (max-width: 1024px) {
-  .login-left-col {
-    padding-left: 3em !important;
-  }
   .social-grid {
     padding: 0 !important;
     margin: 0 !important;
@@ -291,9 +290,6 @@ and (max-width: 1024px) {
   }
   .container-fluid {
     margin: 2em 0 !important;
-  }
-  .portrait-col {
-    padding-right: 2em !important;
   }
 }
 

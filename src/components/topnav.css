@@ -2,7 +2,7 @@ a {
     letter-spacing: .3em;
     padding: 1.2em;
     font-size: 1.2em;
-    font-weight: 400 !important;
+    /*font-weight: 400 !important;*/
     color: rgb(245, 222, 195) !important;
     text-decoration: none;
     transition: all .6s;

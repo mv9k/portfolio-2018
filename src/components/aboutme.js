@@ -31,7 +31,7 @@ const styles = theme => ({
         ...theme.mixins.gutters(),
         // paddingTop: theme.spacing.unit * 2,
         // paddingBottom: theme.spacing.unit * 2,
-        borderRadius: 0,
+        // borderRadius: 0,
         // margin: '10vh 20vw',
         minWidth: '50vw',
         maxWidth: '70vw',

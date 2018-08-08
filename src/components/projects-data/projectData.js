@@ -5,7 +5,7 @@ const Data =
       {
           id: 0,
           title: "AkoWahi.com",
-          desc: "// Wordpress // Custom plugin and theming",
+          desc: "Wordpress",
           tags: "wordpress",
           link: "www.akowahi.com",
           vid: akowahiVid,
