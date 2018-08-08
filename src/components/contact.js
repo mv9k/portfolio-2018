@@ -16,7 +16,7 @@ import loginImg3 from '../media/login-abstract3.jpg';
 import loginImg4 from '../media/login-abstract4.jpg';
 
 import './contact.css';
-import './aboutme.css';
+// import './aboutme.css';
 
 
 const images = [
@@ -80,12 +80,12 @@ class Contact extends Component {
                                                 <Typography variant="headline" component="h1">
                                                     <span className='gold'> Contact Me </span>
                                                 </Typography>
-                                                <div className='login-form-container'>
-                                                    <form autoComplete='off' className='login-form' action={'mailto:mv9kjw@gmail.com'}>
+                                                <div className='contact-form-container'>
+                                                    <form autoComplete='off' className='contact-form' action={'mailto:mv9kjw@gmail.com'}>
                                                         <TextField
                                                             id="contact-name"
                                                             label="Name"
-                                                            className='login-field'
+                                                            className='contact-field'
                                                             fullWidth
                                                             margin="normal"
                                                             onChange={(event) => this.setState({name: event.target.value})}
@@ -105,7 +105,7 @@ class Contact extends Component {
                                                             id="contact-message"
                                                             label="Message"
                                                             multiline
-                                                            rows="4"
+                                                            rows="8"
                                                             defaultValue=""
                                                             className='message-field'
                                                             margin="normal"
@@ -116,7 +116,7 @@ class Contact extends Component {
                                                             disabled={!this.state.name || !this.state.message}
                                                             variant={'outlined'}
                                                             type="submit"
-                                                            className={'login-button'}
+                                                            className={'contact-button'}
                                                             // formValues={this.state}
                                                             onClick={(e)=>this.onSubmit(e)}
                                                         >

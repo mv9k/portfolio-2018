@@ -8,7 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 // import GridListTileBar from '@material-ui/core/GridListTileBar';
 // import tileData from './tileData';
 import Icon from 'react-icons-kit';
-import {androidOpen, socialOctocat} from 'react-icons-kit/ionicons';
+import {androidOpen, socialOctocat, iosWorldOutline} from 'react-icons-kit/ionicons';
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Anime from 'react-anime';
@@ -38,7 +38,6 @@ import Plx from 'react-plx';
 
 const classes = {
     root: {
-        width: '80%',
         padding: '1em',
         display: 'flex',
         alignItems: 'center',
@@ -102,11 +101,17 @@ export default class Projects extends Component {
                                     <Col xs={8}>
                                         <p>{project.desc}</p>
                                     </Col>
-                                    <Col xs={2} style={{display:'flex',justifyContent:'flex-end'}}>
-                                        <Icon className='project-icon' icon={socialOctocat}/>
+                                    <Col xs={2} className={'project-icon-col'} style={{display:'flex',justifyContent:'flex-end'}}>
+                                        { project.githubLink ?
+                                            <a href={project.githubLink} target={'_blank'} className={'project-link'}>
+                                                <Icon className='project-icon' icon={socialOctocat}/>
+                                            </a> : null
+                                        }
                                     </Col>
-                                    <Col xs={2} style={{display:'flex',justifyContent:'flex-end'}}>
-                                        <Icon className='project-icon' icon={androidOpen}/>
+                                    <Col xs={2} className={'project-icon-col'} style={{display:'flex',justifyContent:'flex-end'}}>
+                                        <a href={project.www} target={'_blank'} className={'project-link'}>
+                                            <Icon className='project-icon' icon={iosWorldOutline}/>
+                                        </a>
                                     </Col>
                                 </Row>
                                 {/*</Plx>*/}
@@ -120,8 +125,8 @@ export default class Projects extends Component {
     render() {
 
         return (
-            <div style={classes.root}>
-                <Grid className={'no-pad' + ' ' + 'projects-container'}>
+            <div style={classes.root} className={'projects-container'}>
+                <Grid className={'no-pad'}>
                     {/*<div style={{height:'1000px',overflow:'scroll'}}>*/}
                     <Row middle={'xs'}>
                         {this.projectList}

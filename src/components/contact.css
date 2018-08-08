@@ -1,13 +1,11 @@
-.contact-form-container {
-    margin: 11em;
-}
-
 .custom-tilt {
+    display: flex;
+    justify-content: center;
     padding: 6em;
 }
 
 .contact-form {
-    text-align: center;
+    text-align: left;
 }
 
 label[class*=' MuiFormLabel-focused'],div[class^='MuiFormLabel-focused'] {
@@ -19,17 +17,24 @@ div[class*=' MuiInput-underline']:after {
     border-bottom: none !important;
 }
 
+.contact-button {
+    margin: 2em 1em 1em 0 !important;
+    letter-spacing: .2em;
+    color: rgba(240, 229, 208, .6) !important;
+    border: 1px solid rgba(240, 229, 208, .6) !important;
+    transition: all .6s !important;
+    background: none;
+}
+
+.contact-button:hover {
+    color: rgba(240, 229, 208, 1) !important;
+    border: 1px solid rgba(240, 229, 208, 1) !important;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(234, 22, 22, 0)), color-stop(1%, rgba(86, 87, 97, 0)), color-stop(100%, rgba(224, 224, 255, 0.07)));
+}
+
 .contact-field {
-    border: 1px solid rgb(241,230,209) !important;
+    border-bottom: 1px solid rgba(241,230,209,.6) !important;
     margin: 1.3em 0;
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(38,40,48,0)), color-stop(55%, rgba(38,40,48,0.55)), color-stop(100%, rgba(38,40,48,1)));
-    background: -webkit-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%);
-    background: -o-linear-gradient(181deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%);
-    background: linear-gradient(269deg, rgba(38,40,48,1) 0%, rgba(38,40,48,0.55) 45%, rgba(38,40,48,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262830', endColorstr='#262830',GradientType=1 );
-    -webkit-box-shadow: inset 0px 0px 39px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0px 39px -8px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0px 39px -8px rgba(0,0,0,0.75);
 }
 
 .contact-field label {
@@ -38,8 +43,17 @@ div[class*=' MuiInput-underline']:after {
     left: .5em;
 }
 
+.contact-field label, .message-field label {
+    color: rgba(241,230,209,.6);
+    letter-spacing: .1em;
+}
+
+.contact-field, .message-field {
+    padding-left: .2em !important;
+}
+
 .contact-paper {
-    border-radius: 0;
+    border-radius: 0 !important;
     min-width: 50vw;
     max-width: 1000px;
     height: 60vh;
@@ -53,7 +67,7 @@ div[class*=' MuiInput-underline']:after {
     background: linear-gradient(327deg, rgba(26, 28, 34, 1) 0%, rgba(0,0,0,0.26) 100%);
 }
 
-.login-form-container {
+.contact-form-container {
     min-width: 100%;
 }
 

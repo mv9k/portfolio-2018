@@ -25,7 +25,7 @@
 
 .project-paper {
     margin: 0 auto;
-    /*border-radius: 0 !important;*/
+    border-radius: 0 !important;
     background-color: rgba(0, 0, 0, .5) !important;
     /*max-width: 1000px !important;*/
     width: 100%;
@@ -74,9 +74,21 @@
     opacity: 0;
 }
 
+.project-link {
+    z-index: 100;
+    color: white !important;
+    transition: all .3s ease-out;
+}
+
+.project-link:hover {
+    cursor: pointer;
+    color: red !important;
+    /*-webkit-transform: scale(1.1,1.1);*/
+    /*transform: scale(1.1,1.1);*/
+}
+
 .project-col {
     padding: 1em;
-    cursor: pointer;
     transition: all .5s;
 }
 

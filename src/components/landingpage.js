@@ -128,7 +128,7 @@ function LandingPage(props) {
                                     </Col>
                                     <Col xs={12} sm={12} md={8} lg={8} className={'bio-col'}>
                                         <Typography variant="headline" component="h3">
-                                            <span className='gold bio-title'> Kristopher Wheeler </span>
+                                            <span className='gold bio-title'>Kristopher Wheeler</span>
                                             {/*<Anime*/}
                                                 {/*width={'100%'}*/}
                                                 {/*opacity={'0'}*/}
@@ -151,23 +151,23 @@ function LandingPage(props) {
                                 </Row>
                             </Grid>
                             <Grid fluid className={'social-grid'}>
-                                <Row className={'no-pad'} center={'xs'}>
+                                <Row className={'no-pad'} center={'xs'} style={{justifyContent:'space-around'}}>
                                     <Col className={'social-grid-col'} xs={12} sm={4}>
+                                        <a href={'https://codepen.io/mv9kjw/'} target={'_blank'} className={'social-link'}>                 <div className={'social-icon'} style={{fontSize:'1.4em'}}>CV</div>
+                                            {/*<Icon className='social-icon' icon={socialCodepenOutline}/>*/}
+                                            {/*<span>Codepen</span>*/}
+                                        </a>
+                                    </Col>
+                                    <Col className={'social-grid-col'} xs={4} sm={4}>
                                         <a href={'https://www.linkedin.com/in/kriswheeler/'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialLinkedinOutline}/>
                                             {/*<span>Linkedin </span>*/}
                                         </a>
                                     </Col>
-                                    <Col className={'social-grid-col'} xs={6} sm={4}>
+                                    <Col className={'social-grid-col'} xs={4} sm={4}>
                                         <a href={'https://github.com/mv9k'} target={'_blank'} className={'social-link'}>
                                             <Icon className='social-icon' icon={socialOctocat}/>
                                             {/*<span>Github</span>*/}
-                                        </a>
-                                    </Col>
-                                    <Col className={'social-grid-col'} xs={6} sm={4}>
-                                        <a href={'https://codepen.io/mv9kjw/'} target={'_blank'} className={'social-link'}>
-                                            <Icon className='social-icon' icon={socialCodepenOutline}/>
-                                            {/*<span>Codepen</span>*/}
                                         </a>
                                     </Col>
                                 </Row>

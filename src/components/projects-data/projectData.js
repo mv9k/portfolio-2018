@@ -7,7 +7,8 @@ const Data =
           title: "AkoWahi.com",
           desc: "Wordpress",
           tags: "wordpress",
-          link: "www.akowahi.com",
+          githubLink: '',
+          www: "http://www.akowahi.com",
           vid: akowahiVid,
       },
       {
@@ -15,7 +16,8 @@ const Data =
           title: "AkoWahi",
           desc: "Site built for bla bla bla",
           tags: "wordpress",
-          link: "www.akowahi.com",
+          githubLink: 'test',
+          www: "www.akowahi.com",
           vid: akowahiVid,
       },
       {
@@ -23,7 +25,8 @@ const Data =
           title: "AkoWahi",
           desc: "Site built for bla bla bla",
           tags: "wordpress",
-          link: "www.akowahi.com",
+          githubLink: '',
+          www: "www.akowahi.com",
           vid: akowahiVid,
       },
       {
@@ -31,7 +34,8 @@ const Data =
           title: "AkoWahi",
           desc: "Site built for bla bla bla",
           tags: "wordpress",
-          link: "www.akowahi.com",
+          githubLink: '',
+          www: "www.akowahi.com",
           vid: akowahiVid,
       },
   ];
