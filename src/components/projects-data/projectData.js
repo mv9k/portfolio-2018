@@ -1,4 +1,4 @@
-import akowahiVid from './media/akowahi.mp4';
+import akowahiVid from './media/akowahi2.mp4';
 
 const Data =
   [
@@ -13,30 +13,12 @@ const Data =
       },
       {
           id: 1,
-          title: "AkoWahi",
-          desc: "Site built for bla bla bla",
-          tags: "wordpress",
-          githubLink: 'test',
-          www: "www.akowahi.com",
-          vid: akowahiVid,
-      },
-      {
-          id: 2,
-          title: "AkoWahi",
-          desc: "Site built for bla bla bla",
-          tags: "wordpress",
+          title: "More projects",
+          desc: "...",
+          tags: "",
           githubLink: '',
-          www: "www.akowahi.com",
-          vid: akowahiVid,
-      },
-      {
-          id: 3,
-          title: "AkoWahi",
-          desc: "Site built for bla bla bla",
-          tags: "wordpress",
-          githubLink: '',
-          www: "www.akowahi.com",
-          vid: akowahiVid,
+          www: "",
+          img: 'http://via.placeholder.com/393x238?text=coming+soon',
       },
   ];
 

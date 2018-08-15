@@ -75,14 +75,20 @@
 }
 
 .project-link {
+    padding: .5em !important;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 100;
     color: white !important;
     transition: all .3s ease-out;
 }
 
 .project-link:hover {
+    background: #101012;
     cursor: pointer;
-    color: red !important;
+    color: rgb(182, 143, 112) !important;
     /*-webkit-transform: scale(1.1,1.1);*/
     /*transform: scale(1.1,1.1);*/
 }

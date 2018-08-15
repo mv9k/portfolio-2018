@@ -11,18 +11,12 @@ import TextField from '@material-ui/core/TextField';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Fade } from 'react-slideshow-image';
 
-import BGvideo from '../media/aerialwaves2.mp4';
-import loginImg1 from '../media/login-abstract.jpg';
-import loginImg2 from '../media/login-abstract2.jpg';
-import loginImg3 from '../media/login-abstract3.jpg';
-import loginImg4 from '../media/login-abstract4.jpg';
-
-const images = [
-    loginImg1,
-    loginImg2,
-    loginImg3,
-    loginImg4,
-];
+// const images = [
+//     loginImg1,
+//     loginImg2,
+//     loginImg3,
+//     loginImg4,
+// ];
 
 const styles = theme => ({
     root: {
@@ -48,11 +42,11 @@ function AboutMe(props) {
 
     return(
         <div>
-            <video autoPlay loop className="video-background" muted>
-                <source
-                    src={BGvideo}
-                    type="video/mp4"></source>
-            </video>
+            {/*<video autoPlay loop className="video-background" muted>*/}
+                {/*<source*/}
+                    {/*src={BGvideo}*/}
+                    {/*type="video/mp4"></source>*/}
+            {/*</video>*/}
         <ScrollAnimation animateIn="fadeIn">
             <Tilt className={classes.customTilt + ' ' + 'Tilt'} options={{
                 max: 6,
@@ -105,11 +99,11 @@ function AboutMe(props) {
                                 </Col>
                                 <Col className={'login-right-col'} xs={12} sm={8}>
                                     <ScrollAnimation animateIn="fadeIn" delay={300}>
-                                        <Fade
-                                            images={images}
-                                            duration={6000}
-                                            transitionDuration={1000}
-                                        />
+                                        {/*<Fade*/}
+                                            {/*images={images}*/}
+                                            {/*duration={6000}*/}
+                                            {/*transitionDuration={1000}*/}
+                                        {/*/>*/}
                                     </ScrollAnimation>
                                 </Col>
                             </Row>

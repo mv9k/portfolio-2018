@@ -13,9 +13,7 @@ import {socialOctocat, socialFacebook, socialLinkedinOutline, socialCodepenOutli
 import Anime from 'react-anime';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
-// import BGvideo from '../media/11290640-preview.mp4';
 import BGvideo from '../media/kw-bg2.mp4';
-import portrait from '../media/kw2.svg';
 
 const styles = theme => ({
     root: {
@@ -146,7 +144,7 @@ function LandingPage(props) {
                                     </Col>
                                     <Col xs={12} sm={12} md={8} lg={8} className={'bio-col'}>
                                         <Typography variant="headline" component="h3">
-                                            <span className='gold bio-title'>Kristopher Wheeler</span>
+                                            <span className='gold bio-title'>Kris Wheeler</span>
                                             {/*<Anime*/}
                                                 {/*width={'100%'}*/}
                                                 {/*opacity={'0'}*/}
@@ -162,7 +160,7 @@ function LandingPage(props) {
                                             <ul style={{padding:'0 1em'}}>
                                                 <li>Building smart user interfaces</li>
                                                 <li>Cross-platform development.</li>
-                                                <li>Creating responsive web apps people love to use.</li>
+                                                <li>Creating responsive apps people love to use.</li>
                                             </ul>
                                         </Typography>
                                     </Col>

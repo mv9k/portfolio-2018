@@ -12,10 +12,8 @@ import {androidOpen, socialOctocat, iosWorldOutline} from 'react-icons-kit/ionic
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Anime from 'react-anime';
-import akoWahiVid from './projects-data/media/akowahi.mp4';
 
 import Data from './projects-data/projectData';
-import PixiComponent from './PixiComponent';
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -68,12 +66,17 @@ export default class Projects extends Component {
                             </Col>
                             <Col xs={12} className={'project-img-col'}>
                                 <figure>
-                                    <video autoPlay loop muted className={'project-video'}>
-                                        <source
-                                            src={project.vid}
-                                            type="video/mp4">
-                                        </source>
-                                    </video>
+                                    { project.vid ?
+                                        <video autoPlay loop muted className={'project-video'}>
+                                            <source
+                                                src={project.vid}
+                                                type="video/mp4">
+                                            </source>
+                                        </video> : null
+                                    }
+                                    { project.img ?
+                                        <img src={project.img} className={'project-img'} /> : null
+                                    }
                                 </figure>
                             </Col>
                             <Col xs={12} className={'project-desc-col'}>
@@ -109,9 +112,11 @@ export default class Projects extends Component {
                                         }
                                     </Col>
                                     <Col xs={2} className={'project-icon-col'} style={{display:'flex',justifyContent:'flex-end'}}>
-                                        <a href={project.www} target={'_blank'} className={'project-link'}>
-                                            <Icon className='project-icon' icon={iosWorldOutline}/>
-                                        </a>
+                                        { project.www ?
+                                            <a href={project.www} target={'_blank'} className={'project-link'}>
+                                                <Icon className='project-icon' icon={iosWorldOutline}/>&nbsp;link
+                                            </a> : null
+                                        }
                                     </Col>
                                 </Row>
                                 {/*</Plx>*/}
