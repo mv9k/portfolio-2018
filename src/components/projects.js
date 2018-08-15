@@ -67,7 +67,7 @@ export default class Projects extends Component {
                                 </Row>
                             </Col>
                             <Col xs={12} className={'project-img-col'}>
-                                <figure style={{minWidth:'100%',minHeight:'100%',background:'black'}}>
+                                <figure>
                                     <video autoPlay loop muted className={'project-video'}>
                                         <source
                                             src={project.vid}

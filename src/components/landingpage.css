@@ -106,9 +106,8 @@
 }
 
 .kwlogo-container {
-    max-width: 200px;
-    height: auto;
-    width: 80%;
+    max-width: 150px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -236,7 +235,7 @@
 }
 
 .video-background {
-    opacity: .4;
+    opacity: .6;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -313,3 +312,17 @@ a.social-link div svg {
     width: 3em;
 }
 
+.fill-row {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.fill-row-col {
+    flex-grow: 1;
+    flex-direction: column;
+    min-height: 100%;
+}

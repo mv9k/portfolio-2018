@@ -107,6 +107,7 @@
 }
 
 .project-img-col * {
+    background: #101012;
     width: 100%;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -137,9 +138,33 @@
 }
 
 .project-img-col {
-    /*padding: 2em;*/
     overflow: hidden;
     text-align: center;
+}
+
+.project-img-col figure video, .project-img-col figure img {
+    opacity: 0;
+    -webkit-animation: project-expand 1s ease-out forwards;
+    animation: project-expand 1s ease-out forwards;
+}
+
+@-webkit-keyframes project-expand {
+    0% {
+        /*transform: scaleY(0);*/
+    }
+    100% {
+        opacity: 1;
+        /*transform: scaleY(1);*/
+    }
+}
+@keyframes project-expand {
+    0% {
+        /*transform: scaleY(0);*/
+    }
+    100% {
+        opacity: 1;
+        /*transform: scaleY(1);*/
+    }
 }
 
 .project-desc-col {
