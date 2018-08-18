@@ -193,6 +193,9 @@ button[class*="MuiButton-disabled"] {
 
 /* Mobile media queries */
 @media only screen and (max-width: 374px) {
+  .mobile-remove {
+    display: none;
+  }
   .nav-button {
     font-size: .9em !important;
   }
@@ -226,6 +229,10 @@ button[class*="MuiButton-disabled"] {
   }
 }
 @media only screen and (max-width: 767px) {
+
+  .mobile-remove {
+    display: none;
+  }
 
   .custom-tilt, *[class^="LandingPage-customTilt"] {
     padding: 1em !important;
@@ -290,6 +297,9 @@ button[class*="MuiButton-disabled"] {
 @media only screen
 and (min-width: 375px)
 and (max-width: 767px) {
+  .mobile-remove {
+    display: none;
+  }
   .projects-container {
     width: unset !important;
   }
@@ -305,6 +315,9 @@ and (max-width: 767px) {
 @media only screen
 and (min-width: 768px)
 and (max-width: 1024px) {
+  .mobile-remove {
+    display: none;
+  }
   .social-grid {
     padding: 0 !important;
     margin: 0 !important;

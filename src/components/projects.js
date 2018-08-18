@@ -53,7 +53,7 @@ export default class Projects extends Component {
     }
 
     projectList = Data.map((project) =>
-            <Col key={project.id} xs={12} sm={6} md={4} className={'project-col'}>
+            <Col key={project.id} xs={12} sm={6} lg={4} className={'project-col'}>
                 <Paper id={project.index} className={classes.projectCard + ' ' + 'project-paper'} elevation={22}>
                     <Grid className={'project-grid'}>
                         <Row middle={'xs'}>

@@ -112,23 +112,29 @@
 }
 
 #kwlogo path {
-    stroke-width: .5pt !important;
     stroke: rgb(239, 239, 239) !important;
-    fill: none !important;
-    stroke-dasharray: 1000;
+    stroke-dasharray: 1200;
     opacity: 0;
-    animation: logoanim 2.5s ease-in-out forwards;
+    -webkit-animation: logoanim 5.5s ease-in-out forwards;
+    animation: logoanim 5.5s ease-in-out forwards;
+    animation-delay: .5s;
 }
 
 @keyframes logoanim {
     0% {
+        transform-origin: center;
+        transform: translateX(-10%) scale(.9,.9);
         opacity: 0;
         /*fill: none;*/
-        stroke-dashoffset: 1000;
+        stroke-dashoffset: 1200;
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(10%) scale(1,1);
     }
     100% {
         opacity: 1;
-        fill: white;
+        transform: translateX(0);
         stroke-dashoffset: 0;
     }
 

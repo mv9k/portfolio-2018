@@ -46,22 +46,8 @@ function LandingPage(props) {
     //     '    </g>\n' +
     //     '</svg>\n';
 
-    let svgString = '<svg width="100%" height="100%" viewBox="0 0 614 484" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">\n' +
-        '    <g id="kwlogo" serif:id="Layer 1" transform="matrix(1,0,0,1,-3.50137,-4.86543)">\n' +
-        '        <g transform="matrix(6.97932,0,0,3.72117,-2599.76,-664.129)">\n' +
-        '            <path d="M428.164,280.429L420.091,280.429L410.587,209.881L420.187,209.881L424.315,246.547L424.509,248.851L425.291,248.851L425.581,246.547L429.982,209.881L437.435,209.881L441.836,246.547L442.126,248.851L442.908,248.851L443.101,246.547L447.229,209.881L456.829,209.881L447.325,280.429L439.253,280.429L434.469,247.027L433.898,242.9L433.519,242.9L432.947,247.027L428.164,280.429Z" />\n' +
-        '        </g>\n' +
-        '        <g transform="matrix(6.97932,0,0,3.72117,-2599.76,-664.129)">\n' +
-        '            <path d="M387.634,209.881L387.634,234.549L388.018,234.549L388.497,233.397L397.126,209.881L407.206,209.881L397.702,233.109L408.454,280.429L398.413,280.429L391.213,249.714L390.924,248.275L390.635,248.275L390.056,249.714L387.643,255.473L387.643,280.429L377.275,280.429L377.275,209.881L387.634,209.881Z" />\n' +
-        '        </g>\n' +
-        '        <g id="k" transform="matrix(2.33716,0,0,2.33716,21.6228,60.6956)">\n' +
-        '            <path d="M0,0L247.205,0" />\n' +
-        '        </g>\n' +
-        '        <g id="w" transform="matrix(2.33716,0,0,2.33716,21.6228,433.035)">\n' +
-        '            <path d="M0,0L247.205,0" />\n' +
-        '        </g>\n' +
-        '    </g>\n' +
-        '</svg>';
+    let svgString = '<svg id="kwlogo" width="100%" height="100%" viewBox="0 0 295 310" version="1.1" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-linejoin:round;">' +
+        '<path d="M50,50l0,210l18.633,0m10.549,-76.216c12.414,0.024 15.529,-0.735 15.582,2.771c0.597,39.451 41.186,73.791 90.559,73.791c16.144,0 41.754,0.286 59.593,0.114m-166.043,-105.46l46.127,0m-0.1,29.303c0,24.686 27.185,45.697 60.1,45.697m-135,-180l18.451,0m56.549,105c0,-57.601 54.17,-105 120,-105m-45,90l0,60m45,0l0,-120m-40.549,150l40.549,-0.088m-225,-209.912l0,270l255,0l0,-270l-255,0" style="fill:none;stroke:#fff;stroke-width:22.03px;"/></svg>';
 
     return(
         <div className={'landingpage-container'}>
@@ -110,12 +96,12 @@ function LandingPage(props) {
                         <Typography variant="headline" component="span" className='tab-text'>
                             {/*<Icon className='email-icon' icon={basic_mail}/>*/}
                             <a href={'mailto:mv9kjw@gmail.com'} className={'contact-link'}>
-                            mv9kjw@gmail.com
+                            wheelerkris000@gmail.com
                             </a>
                             <span className={'vertical-divider'}>&nbsp; | &nbsp;</span>
                             {/*<Icon className='phone-icon' icon={basic_smartphone}/>*/}
                             <a href={'tel:1-801-762-9053'} className={'contact-link'}>
-                            801-762-9053
+                            +1 (801) 762-9053
                             </a>
                         </Typography>
                         <div className='Tilt-inner landing-paper-content'>
@@ -143,6 +129,7 @@ function LandingPage(props) {
                                         {/*</ScrollAnimation>*/}
                                     </Col>
                                     <Col xs={12} sm={12} md={8} lg={8} className={'bio-col'}>
+                                        <br className={'mobile-remove'} />
                                         <Typography variant="headline" component="h3">
                                             <span className='gold bio-title'>Kris Wheeler</span>
                                             {/*<Anime*/}
@@ -154,13 +141,13 @@ function LandingPage(props) {
                                             {/*</Anime>*/}
                                         </Typography>
                                         <Typography component="p" className='bio-text'>
-                                            Full stack web developer with a passion for UX design.
+                                            Full stack web developer with a passion for UI/UX development.
                                             I code both for work and as a hobby. My main interests are:
                                             <br/>
                                             <ul style={{padding:'0 1em'}}>
-                                                <li>Building smart user interfaces</li>
+                                                <li>Building smart future-proof user interfaces</li>
                                                 <li>Cross-platform development.</li>
-                                                <li>Creating responsive apps people love to use.</li>
+                                                <li>Creating responsive apps & websites people love to use.</li>
                                             </ul>
                                         </Typography>
                                     </Col>
@@ -169,7 +156,7 @@ function LandingPage(props) {
                             <Grid fluid className={'social-grid'}>
                                 <Row className={'no-pad'} center={'xs'} style={{justifyContent:'space-around'}}>
                                     <Col className={'social-grid-col'} xs={12} sm={4}>
-                                        <a href={'/cv/kwheeler_resume_2018.docx'} className={'social-link'} download>
+                                        <a href={'/cv/kwheeler_resume_2018.pdf'} className={'social-link'} download>
                                             <div className={'social-icon'} style={{fontSize:'1.4em'}}>CV</div>
                                             {/*<Icon className='social-icon' icon={socialCodepenOutline}/>*/}
                                             {/*<span>Codepen</span>*/}
