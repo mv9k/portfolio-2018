@@ -193,6 +193,12 @@ button[class*="MuiButton-disabled"] {
 
 /* Mobile media queries */
 @media only screen and (max-width: 374px) {
+  .bio-ul {
+    margin: 0;
+  }
+  .bio-ul li {
+    font-size: 11px;
+  }
   .mobile-remove {
     display: none;
   }
@@ -297,6 +303,10 @@ button[class*="MuiButton-disabled"] {
 @media only screen
 and (min-width: 375px)
 and (max-width: 767px) {
+  .bio-ul li {
+    font-size: 11px;
+    margin: 0;
+  }
   .mobile-remove {
     display: none;
   }

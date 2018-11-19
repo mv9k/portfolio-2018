@@ -144,7 +144,7 @@ function LandingPage(props) {
                                             Full stack web developer with a passion for UI/UX development.
                                             I code both for work and as a hobby. My main interests are:
                                             <br/>
-                                            <ul style={{padding:'0 1em'}}>
+                                            <ul className={'bio-ul'} style={{padding:'0 1em'}}>
                                                 <li>Building smart future-proof user interfaces</li>
                                                 <li>Cross-platform development.</li>
                                                 <li>Creating responsive apps & websites people love to use.</li>
