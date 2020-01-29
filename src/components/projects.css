@@ -1,3 +1,11 @@
+.project-grid.container {
+    height: 348px;
+}
+
+.project-img-col figure {
+    height: 200px;
+}
+
 .card-desc {
     position: absolute;
     bottom: 0;

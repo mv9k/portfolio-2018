@@ -1,4 +1,5 @@
 import akowahiVid from './media/akowahi2.mp4';
+import bootstrap1 from './media/bootstrapsite.png';
 
 const Data =
   [
@@ -12,7 +13,16 @@ const Data =
           vid: akowahiVid,
       },
       {
-          id: 1,
+        id: 1,
+        title: "Standard Bootstrap site",
+        desc: "Bootstrap",
+        tags: "bootstrap",
+        githubLink: '',
+        www: "/bootstrap-1",
+        img: bootstrap1,
+    },
+      {
+          id: 2,
           title: "More projects",
           desc: "...",
           tags: "",

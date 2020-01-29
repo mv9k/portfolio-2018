@@ -114,7 +114,7 @@ export default class Projects extends Component {
                                     <Col xs={2} className={'project-icon-col'} style={{display:'flex',justifyContent:'flex-end'}}>
                                         { project.www ?
                                             <a href={project.www} target={'_blank'} className={'project-link'}>
-                                                <Icon className='project-icon' icon={iosWorldOutline}/>&nbsp;link
+                                                <Icon className='project-icon' icon={iosWorldOutline}/>&nbsp;view
                                             </a> : null
                                         }
                                     </Col>
