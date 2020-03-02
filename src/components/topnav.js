@@ -109,7 +109,7 @@ class TopNav extends Component {
                                 {/*<div className='link-line-yb'></div>*/}
                             {/*</NavLink>*/}
                         {/*</Button>*/}
-                        <Button color="inherit" className={'nav-button'}>
+                        {/* <Button color="inherit" className={'nav-button'}>
                             <NavLink activeClassName='active-nav' to="/projects">
                                 <div className='link-line-a'></div>
                                 <div className='link-line-z'></div>
@@ -118,7 +118,7 @@ class TopNav extends Component {
                                 <div className='link-line-y'></div>
                                 <div className='link-line-yb'></div>
                             </NavLink>
-                        </Button>
+                        </Button> */}
                         {/*<Button color="inherit">*/}
                             {/*<NavLink activeClassName='active-nav' to="/resume">*/}
                                 {/*<div className='link-line-a'></div>*/}
